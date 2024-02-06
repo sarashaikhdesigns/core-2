@@ -41,6 +41,17 @@ p{
 width: 50vw;
 }
 
+.hands img{
+width: 30%;
+margin-right: 100vw;
+margin-top: -10vw;
+}
+
+.flower img{
+width: 20%;
+margin-right: 35vw;
+margin-top: -70vw;
+}
 
 
 .date p{
@@ -51,7 +62,8 @@ margin-right: 25vw;
 
 .caption {
 text-align: left;
-margin-left: 23.5vw;
+margin-left: 55vw;
+margin-top: -12vw;
  max-width: 20vw; /* Set the maximum width */
   }
   
