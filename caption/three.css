@@ -1,0 +1,66 @@
+body{
+    background-color: #650000;
+    text-align: center;
+}
+
+h1{
+    color:antiquewhite;
+}
+
+p{
+    color:antiquewhite;
+}
+
+
+.home-button {
+  position: fixed;
+  top: 1vw;
+  left: 1vw;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.home-button p {
+  color: antiquewhite;
+}
+
+.one {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .two {
+    position: relative;
+    z-index: 2;
+  }
+  
+
+
+
+.image-1 img{
+width: 50vw;
+}
+
+
+
+.date p{
+text-align: right;
+margin-right: 25vw;
+}
+
+
+.caption {
+text-align: left;
+margin-left: 23.5vw;
+ max-width: 20vw; /* Set the maximum width */
+  }
+  
+.next {
+margin-top: 0%;
+}
+
+.next img{
+width: 3%;
+height: 1%;
+margin-left: 50vw;
+}

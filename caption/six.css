@@ -1,0 +1,64 @@
+body{
+    background-color: #650000;
+    text-align: center;
+}
+
+h1{
+    color:antiquewhite;
+}
+
+p{
+    color:antiquewhite;
+}
+
+
+.home-button {
+    position: fixed;
+    top: 1vw;
+    left: 1vw;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.home-button p {
+    color: antiquewhite;
+    stroke: none;
+}
+
+.one{
+margin-top: 5vw;}
+
+
+.image-1 img{
+width: 70vw;
+margin-top: -4vw;
+}
+
+.image-2 img{
+width: 25vw;
+margin-left: 33vw;
+margin-top: -20vw;
+}
+
+.image-3 img{
+width: 40vw;
+margin-top: -7vw;
+margin-right: 30vw;
+}
+
+.image-4 img{
+width: 30vw;
+margin-top: -25vw;
+margin-left: 25vw;
+}
+
+  
+.next {
+margin-top: -7%;
+}
+
+.next img{
+width: 3%;
+height: 1%;
+margin-left: 45%;
+}
