@@ -67,12 +67,8 @@ margin-top: -12vw;
  max-width: 20vw; /* Set the maximum width */
   }
   
-.next {
-margin-top: 0%;
-}
-
 .next img{
-width: 3%;
-height: 1%;
-margin-left: 50vw;
+width: 20%;
+height: 7%;
+/* margin-left: 45%; */
 }
