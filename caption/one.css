@@ -1,7 +1,35 @@
 body{
     background-color: #650000;
     text-align: center;
+    margin: 0;
 }
+
+
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%;
+  z-index: -1;
+  white-space: nowrap; /* Ensure no line breaks */
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+.background img {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  object-fit: cover;
+  opacity: 20%;
+}
+
+
+
+
+
+
+
 
 h1{
     color:antiquewhite;
@@ -11,6 +39,9 @@ p{
     color:antiquewhite;
 }
 
+.background img{
+height: 100%;
+}
 
 .home-button {
     position: fixed;
@@ -62,17 +93,15 @@ margin-right: 25vw;
 
 .caption {
 text-align: left;
-margin-left: 23.5vw;
-margin-bottom: 5vw;
+margin-left: 25vw;
+margin-top: -1vw;
 max-width: 20vw; /* Set the maximum width */
   }
   
-.next {
-/* margin-top: 3vw; */
-}
+
 
 .next img{
-width: 3%;
-height: 1%;
-margin-left: 45%;
+width: 20%;
+height: 7%;
+/* margin-left: 45%; */
 }
