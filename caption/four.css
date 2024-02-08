@@ -1,6 +1,7 @@
 body{
     background-color: #650000;
     text-align: center;
+    
 }
 
 h1{
@@ -8,7 +9,10 @@ h1{
 }
 
 p{
-    color:antiquewhite;
+color:antiquewhite;
+font-family: "cormorant-garamond", serif;
+font-weight: 400;
+font-style: normal;
 }
 
 
