@@ -47,9 +47,9 @@ display: inline-block;
 
 @keyframes swayAnimation2 {
     0% { transform-origin: top center; transform: rotate(0); }
-    25% { transform-origin: top center; transform: rotate(2deg); } /* Opposite direction */
+    25% { transform-origin: top center; transform: rotate(2deg); } 
     50% { transform-origin: top center; transform: rotate(0); }
-    75% { transform-origin: top center; transform: rotate(-2deg); } /* Opposite direction */
+    75% { transform-origin: top center; transform: rotate(-2deg); } 
     100% { transform-origin: top center; transform: rotate(0); }
 }
 
@@ -113,17 +113,12 @@ margin-top: -8vw;
 width: 10vw;
 }
   
-.next {
-margin-top: -5vw;
-margin-right: 5vw;
-}
+
 
 .next img{
-width: 3%;
-height: 1%;
-margin-left: 45%;
+width: 20%;
+height: 7%;
 }
-
 
 
 
@@ -135,17 +130,16 @@ margin-top: -47vw;
 width: 25vw; /* Set the maximum width */
 }
 
-.caption2 {
+.caption2{
 text-align: left;    
-margin-top: 36.5vw;
-margin-right: 40vw;
-width: 25vw; /* Set the maximum width */
+margin-top: 37vw;
+margin-left: 45vw;
 }
 
 
-.caption2 {
+.caption3{
 text-align: left;
-margin-top: 36.5vw;
-margin-left: 60vw;
-width: 25vw; /* Set the maximum width */
+margin-top: -5vw;
+margin-left: 67vw;
+max-width: 10vw; /* Set the maximum width */
 }
