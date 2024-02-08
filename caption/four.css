@@ -123,3 +123,29 @@ width: 3%;
 height: 1%;
 margin-left: 45%;
 }
+
+
+
+
+
+.caption1 {
+text-align: left;
+margin-left: 37vw;
+margin-top: -47vw;
+width: 25vw; /* Set the maximum width */
+}
+
+.caption2 {
+text-align: left;    
+margin-top: 36.5vw;
+margin-right: 40vw;
+width: 25vw; /* Set the maximum width */
+}
+
+
+.caption2 {
+text-align: left;
+margin-top: 36.5vw;
+margin-left: 60vw;
+width: 25vw; /* Set the maximum width */
+}
