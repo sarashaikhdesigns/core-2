@@ -136,12 +136,17 @@ p {
 
 /* one */
 
+
+.scroll-button1{
+margin-top: -50vw;
+}
+
+
+
 body {
     text-align: center;
     margin: 0;
 }
-
-
 
 
 .container-one {
@@ -151,6 +156,7 @@ body {
     z-index: -2;
     height: 100vw;
 }
+
 
 
 
@@ -406,3 +412,32 @@ width: 30vw;
 transform: rotate(-5deg); 
 margin-left: 10vw;
 }
+
+
+
+/* six */
+
+
+
+.container-six .image-1 img{
+    width: 70vw;
+    margin-top: -4vw;
+    }
+
+.container-six .image-2 img{
+    width: 25vw;
+    margin-left: 33vw;
+    margin-top: -20vw;
+    }
+    
+.container-six .image-3 img{
+    width: 40vw;
+    margin-top: -7vw;
+    margin-right: 30vw;
+    }
+    
+.container-six .image-4 img{
+    width: 30vw;
+    margin-top: -25vw;
+    margin-left: 25vw;
+    }

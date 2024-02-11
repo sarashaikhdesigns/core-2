@@ -1,20 +1,29 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Get the <h1> element inside the .intro div
     const introHeading = document.querySelector('.intro h1');
-    
-    // Add a click event listener to the <h1> element
-    introHeading.addEventListener('click', function() {
-        // Show the content outside of the home section
-        document.querySelector('#container1').style.display = 'block';
+    const scrollButtons = document.querySelectorAll('.scroll-button, .scroll-button1');
 
-        // Get the y-coordinate of the target element (container-one)
-        const containerOneY = document.querySelector('#container1').offsetTop;
-        
-        // Smooth scroll to the target element
-        window.scrollTo({
-            top: containerOneY,
-            behavior: 'smooth' // Smooth scrolling behavior
+    introHeading.addEventListener('click', function() {
+        const targetContainer = document.querySelector('#container1');
+        toggleContainerVisibility(targetContainer);
+        scrollToElement(targetContainer);
+    });
+
+    scrollButtons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            const targetContainerId = this.getAttribute('data-target');
+            const targetContainer = document.querySelector(`#${targetContainerId}`);
+            scrollToElement(targetContainer);
         });
     });
-});
 
+    function toggleContainerVisibility(container) {
+        container.style.display = 'block';
+    }
+
+    function scrollToElement(element) {
+        element.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+});
