@@ -9,8 +9,8 @@
 
 
 body {
-        background: #240000; /* Adjust the colors as needed */
-
+    background:  #650000; 
+    overflow-x: hidden; 
 }
 
 h1 {
@@ -65,6 +65,12 @@ p {
   }
 
 
+.home{
+background:  #240000; 
+
+}
+
+
 
 
 .designs {
@@ -95,14 +101,6 @@ p {
 }
 
 
-.space{
-    margin-bottom: -20vw;
-    width: 100%;
-    height: 50vh; /* Set the height to cover 50% of the screen */
-    background: rgb(101, 0, 0);
-    z-index: 3; 
-    margin-bottom: -1.1vw;
-}
 
 .mandala {
     display: flex;
@@ -137,8 +135,12 @@ p {
 /* one */
 
 
-.scroll-button1{
-margin-top: -50vw;
+
+.scroll-button1 img {
+    width: 2vw; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer when hovering over the image */
+    /* Add any additional styling you need */
 }
 
 
@@ -151,14 +153,9 @@ body {
 
 .container-one {
     position: relative;
-    background:  #650000; /* Gradient background */
-    transition: background-color 0.5s ease; /* Transition for background color */
-    z-index: -2;
-    height: 100vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
 }
-
-
-
 
 
 .container-one .image-1 {
@@ -218,7 +215,6 @@ body {
     margin-top: 30vw;
     margin-bottom: 30vw;
     position: relative;
-    background:  #650000; /* Gradient background */
 }
 
 .container-two .image-1{
@@ -272,6 +268,13 @@ body {
 /* three */
 
 
+.container-three{
+    position: relative;
+    height: 100vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
 
 .container-three .image-1 img{
 width: 50vw;
@@ -309,6 +312,12 @@ max-width: 20vw; /* Set the maximum width */
 
 
 /* four */
+
+.container-four{
+margin-top: -40vw;
+margin-bottom: 30vw;
+}
+
 .container-four .photo-strip {
     margin-top: -80vw;
     margin-left: -33vw;
@@ -397,7 +406,7 @@ max-width: 20vw; /* Set the maximum width */
 
 .container-five{
 margin-top: 10vw;
-margin-bottom: 10vw;
+margin-bottom: 30vw;
 }
 
 
@@ -417,7 +426,10 @@ margin-left: 10vw;
 
 /* six */
 
-
+.container-six{
+margin-bottom: 20vw;
+margin-top: 10vw;
+}
 
 .container-six .image-1 img{
     width: 70vw;
