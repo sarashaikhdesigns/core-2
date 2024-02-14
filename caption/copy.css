@@ -124,31 +124,42 @@ background:  #240000;
 
 
 
-
-
-/* one */
-
-.nav {
-    display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
+.container-one,
+.container-two,
+.container-three,
+.container-four,
+.container-five {
+    position: relative; /* Set the position of the containers to relative */
 }
 
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.nav5 {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Position relative */
+    z-index: 1; /* Ensure the navigation elements are above other content */
+    margin-top: -450px; /* Adjust the margin as needed */
+    margin-bottom: 100px; /* Adjust the margin as needed */
+}
+
+.scroll-button1 img,
+.scroll-button2 img {
+    width: 2vw;
+    height: auto;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: -90vw;
+}
 
 .scroll-button1 img {
-    
-    width: 2vw; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer; /* Change cursor to pointer when hovering over the image */
     transform: rotate(180deg);
 }
 
-.scroll-button2 img {
-    width: 2vw; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer; /* Change cursor to pointer when hovering over the image */
 
-}
+
 
 
 
@@ -193,6 +204,7 @@ body {
     text-align: right;
     margin-top: -1vw;
     margin-right: 25vw;
+    padding-top: 3vw;
 }
 
 .container-one .caption {
@@ -226,6 +238,7 @@ body {
 }
 
 .container-two .image-1{
+    padding-top: 3vw;
     position: relative;
     z-index: 1;
   }
@@ -304,6 +317,7 @@ margin-top: -70vw;
 .container-three .date p{
 text-align: right;
 margin-right: 25vw;
+padding-top: 3vw;
 }
 
 
@@ -322,7 +336,7 @@ max-width: 20vw; /* Set the maximum width */
 /* four */
 
 .container-four{
-margin-top: -20vw;
+margin-top: 20vw;
 margin-bottom: 30vw;
 }
 
@@ -390,6 +404,7 @@ margin-bottom: 30vw;
 }
 
 .container-four .caption1 {
+    padding-top: 3vw;
     text-align: left;
     margin-left: 37vw;
     margin-top: -38vw;
@@ -413,10 +428,11 @@ margin-bottom: 30vw;
 
 .container-five{
     margin-top: 30vw;
-    margin-bottom: 30vw;
+    margin-bottom: 60vw;
 }
 
 .container-five .image-1 img {
+    padding-top: 5vw;
     width: 22vw;
     margin-top: 5vw;
     margin-right: 30vw;
