@@ -9,11 +9,13 @@ body {
 
 h1 {
     color: antiquewhite;
-    font-size: 4vw;
 }
 
 p {
     color: antiquewhite;
+    font-family: "pritzious", sans-serif;
+    font-size: 25px;
+    line-height: 1; /* Adjust the value as needed */
 }
 
 .intro {
@@ -29,7 +31,8 @@ p {
 
 
 .intro h1 {
-    margin-bottom: -20vw;
+    font-size: 60px;
+    margin-bottom: -30vw;
     text-align: center; /* Center align the text */
     font-family: "sarvatrik-tamil", sans-serif;
     font-weight: 400;
@@ -44,9 +47,11 @@ p {
 
 .intro:hover h1::before {
     margin-bottom: 50px;
+    line-height: 1;
+    letter-spacing: -3px; /* Adjust the value as needed */
     content: "click to read the greatest love story of all time"; /* Set content on hover */
-    font-style: italic; /* Set to italic on hover */
-    font-family: "times";
+    font-style:italic;
+    font-family: times;
     transition: content 1s ease; /* Add transition */
 
 }
@@ -211,7 +216,7 @@ body {
     text-align: left;
     margin-left: 25vw;
     margin-top: -1vw;
-    max-width: 20vw; /* Set the maximum width */
+    max-width: 30vw; /* Set the maximum width */
 }
 
 
@@ -272,13 +277,13 @@ body {
   text-align: left;
   margin-left: 54vw;
   margin-top: -43vw;
-  max-width: 15vw; /* Set the maximum width */
+  max-width: 20vw; /* Set the maximum width */
   }
   .container-two .caption2 {
   text-align: left;
   margin-top: 36.5vw;
-  margin-left: 60vw;
-  max-width: 25vw; /* Set the maximum width */
+  margin-left: 50vw;
+  max-width: 30vw; /* Set the maximum width */
   }
 
 
