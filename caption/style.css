@@ -31,7 +31,7 @@ p {
 
 
 .intro h1 {
-    font-size: 60px;
+    font-size: 4vw;
     margin-bottom: -30vw;
     text-align: center; /* Center align the text */
     font-family: "sarvatrik-tamil", sans-serif;
@@ -50,7 +50,7 @@ p {
     line-height: 1;
     letter-spacing: -3px; /* Adjust the value as needed */
     content: "click to read the greatest love story of all time"; /* Set content on hover */
-    font-style:italic;
+    font-style: italic;
     font-family: times;
     transition: content 1s ease; /* Add transition */
 
