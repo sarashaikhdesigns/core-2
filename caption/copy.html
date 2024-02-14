@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">    
-    <script src="script.js"></script>
+    <link href="copy.css" rel="stylesheet">    
+    <script src="copy.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/wxs6qzf.css">
     <link rel="icon" type="image/png" href="images/mandala.png">
 </head>
@@ -25,9 +25,10 @@
         </section>
 
         <div class="intro" >
-            <h1 onclick="scrollToSection('container1')"></h1>
+            <h1 onclick="navigateToContainer('#container1')"></h1>
         </div>
     </div>
+
 
     <a href="https://sarashaikhdesigns.github.io/core-2/caption/index.html" class="home-link">
         <div class="home-button">
@@ -56,9 +57,15 @@
             <div class="caption">
                 <p>photographed is a beautiful, young couple, in love. at the time in India, arranged marriages were the norm. but these two, married for love. this photo marks the beginning of a lifetime filled with love and happiness.</p>
             </div>
-            <a href="#" class="scroll-button1" data-target="container2">
+            <div class="nav">
+            <a href="#" class="scroll-button1" data-target="#home">
+                <img src="images/arrow.png" alt="Scroll to Previous">
+            </a>
+            <a href="#" class="scroll-button2" data-target="#container2">
                 <img src="images/arrow.png" alt="Scroll to Next">
             </a>
+            </div>
+            
         </section>
     </div>
 
@@ -79,9 +86,14 @@
             <div class="caption2">
                 <p>soon enough, she grew up, and they had to send her off to college all the way from india to america. it was hard, but they always put the needs of their children first.</p>
             </div>
-            <a href="#" class="scroll-button1" data-target="container3">
+            <div class="nav">
+            <a href="#" class="scroll-button1" data-target="#container1">
+                <img src="images/arrow.png" alt="Scroll to Previous">
+            </a>
+            <a href="#" class="scroll-button2" data-target="#container3">
                 <img src="images/arrow.png" alt="Scroll to Next">
             </a>
+            </div>
         </section>
     </div>
 
@@ -91,7 +103,7 @@
     <div class="container-three" id="container3">
         <section class ="three">
         <div class="date">
-            <p>Novemver 22, 1998</p>
+            <p>november 22, 1998</p>
         </div>
         <div class="image-1">
             <img class="thumbnail" src="images/four.jpeg">
@@ -107,15 +119,28 @@
             and their daughter got married to a handsome man who would love her for many years to come.
             </p>
         </div>
-        <a href="#" class="scroll-button1" data-target="container4">
+
+        <div class="nav">
+
+        <a href="#" class="scroll-button1" data-target="#container2">
+            <img src="images/arrow.png" alt="Scroll to Previous">
+        </a>
+        <a href="#" class="scroll-button2" data-target="#container4">
             <img src="images/arrow.png" alt="Scroll to Next">
         </a>
+        <div>
+
     </section>
     </div>
 
 
     <div class="container-four" id="container4">
         <section class ="four">
+            <div class="caption1">
+                <p>
+                they started a family of their own. on march 29, 2004, they had the most perfect baby girl. she was the best of them all, the apple of their eyes, she never did any wrong. 
+                </p>
+                </div>
             <div class="image-1">
                 <img class="thumbnail" src="images/five.jpeg">
                 </div>
@@ -127,55 +152,67 @@
                 <img class="strip2" src="images/six.jpeg">
                 </div>
                 </div>
-                
+
                 <div class="image-4">
                 <img class="thumbnail" src="images/seven.jpeg">
                 </div>
-                <div class="caption1">
-                <p>
-                they started a family of their own. on march 29, 2004, they had the most perfect baby girl. she was the best of them all, the apple of their eyes, she never did any wrong. 
-                </p>
-                </div>
+
                 <div class="caption2">
                 <p>
                 (that little girl is me)
                 </p>
                 </div>
+
                 <div class="caption3">
                 <p>
                 on january 5, 2010, they had another beautiful girl, but their eldest remained the favorite, of course.</p>
                 </div>
-                <a href="#" class="scroll-button1" data-target="container5">
+                <div class="nav">
+
+                <a href="#" class="scroll-button1" data-target="#container3">
+                    <img src="images/arrow.png" alt="Scroll to Previous">
+                </a>
+                <a href="#" class="scroll-button2" data-target="#container5">
                     <img src="images/arrow.png" alt="Scroll to Next">
                 </a>
+                </div>
+           
         </section>
+
     </div>
 
 
 
 
     <div class="container-five" id="container5">
-        <!-- Content for container two -->
-        <section class ="five">
-            <div class="date">
-            </div>
+        <!-- Content for container five -->
+        <section class="five">
             <div class="image-1">
                 <img class="thumbnail" src="images/twelve.jpeg">
             </div>
             <div class="image-2">
                 <img class="thumbnail" src="images/ten.jpeg">
             </div>
-            
-            <div class="caption">
-            <p>
-            caption
-            </p>
+            <div class="image-3">
+                <img class="big" src="images/eleven.jpeg">
             </div>
-        <a href="#" class="scroll-button1" data-target="container6">
-            <img src="images/arrow.png" alt="Scroll to Next">
-        </a>
-     </section>
+            <div class="caption">
+                <p>but of course, i remained the favorite of all the grandchildren (don’t tell my sister though)
+                </p>
+            </div>
+            <div class="nav">
+
+                <a href="#" class="scroll-button1" data-target="#container4">
+                    <img src="images/arrow.png" alt="Scroll to Previous">
+                </a>
+                <a href="#" class="scroll-button2" data-target="#container6">
+                    <img src="images/arrow.png" alt="Scroll to Next">
+                </a>
+             </div>
+        </section>
+
     </div>
+    
 
 
     <div class="container-six" id="container6">
@@ -196,7 +233,11 @@
                 <div class="jasmine">
                 <img class="thumbnail" src="images/jasmine.png">
                 </div>
-
+                <div class="end-mandala">
+                    <a href="https://sarashaikhdesigns.github.io/core-2/caption/index.html">
+                        <img class="mandala-img" src="images/end-mandala.png" alt="End Mandala">
+                    </a>
+                </div>
         </section>
     </div>
 
