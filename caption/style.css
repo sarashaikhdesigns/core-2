@@ -9,11 +9,13 @@ body {
 
 h1 {
     color: antiquewhite;
-    font-size: 4vw;
 }
 
 p {
     color: antiquewhite;
+    font-family: "pritzious", sans-serif;
+    font-size: 25px;
+    line-height: 1; /* Adjust the value as needed */
 }
 
 .intro {
@@ -29,7 +31,8 @@ p {
 
 
 .intro h1 {
-    margin-bottom: -20vw;
+    font-size: 60px;
+    margin-bottom: -30vw;
     text-align: center; /* Center align the text */
     font-family: "sarvatrik-tamil", sans-serif;
     font-weight: 400;
@@ -44,9 +47,11 @@ p {
 
 .intro:hover h1::before {
     margin-bottom: 50px;
+    line-height: 1;
+    letter-spacing: -3px; /* Adjust the value as needed */
     content: "click to read the greatest love story of all time"; /* Set content on hover */
-    font-style: italic; /* Set to italic on hover */
-    font-family: "times";
+    font-style:italic;
+    font-family: times;
     transition: content 1s ease; /* Add transition */
 
 }
@@ -124,18 +129,42 @@ background:  #240000;
 
 
 
+.container-one,
+.container-two,
+.container-three,
+.container-four,
+.container-five {
+    position: relative; /* Set the position of the containers to relative */
+}
 
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.nav5 {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Position relative */
+    z-index: 1; /* Ensure the navigation elements are above other content */
+    margin-top: -450px; /* Adjust the margin as needed */
+    margin-bottom: 100px; /* Adjust the margin as needed */
+}
 
-/* one */
-
-
+.scroll-button1 img,
+.scroll-button2 img {
+    width: 2vw;
+    height: auto;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: -90vw;
+}
 
 .scroll-button1 img {
-    width: 2vw; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer; /* Change cursor to pointer when hovering over the image */
-    /* Add any additional styling you need */
+    transform: rotate(180deg);
 }
+
+
+
 
 
 
@@ -178,14 +207,16 @@ body {
 
 .container-one .date p {
     text-align: right;
+    margin-top: -1vw;
     margin-right: 25vw;
+    padding-top: 3vw;
 }
 
 .container-one .caption {
     text-align: left;
     margin-left: 25vw;
     margin-top: -1vw;
-    max-width: 20vw; /* Set the maximum width */
+    max-width: 30vw; /* Set the maximum width */
 }
 
 
@@ -212,6 +243,7 @@ body {
 }
 
 .container-two .image-1{
+    padding-top: 3vw;
     position: relative;
     z-index: 1;
   }
@@ -245,13 +277,13 @@ body {
   text-align: left;
   margin-left: 54vw;
   margin-top: -43vw;
-  max-width: 15vw; /* Set the maximum width */
+  max-width: 20vw; /* Set the maximum width */
   }
   .container-two .caption2 {
   text-align: left;
   margin-top: 36.5vw;
-  margin-left: 60vw;
-  max-width: 25vw; /* Set the maximum width */
+  margin-left: 50vw;
+  max-width: 30vw; /* Set the maximum width */
   }
 
 
@@ -290,6 +322,7 @@ margin-top: -70vw;
 .container-three .date p{
 text-align: right;
 margin-right: 25vw;
+padding-top: 3vw;
 }
 
 
@@ -308,7 +341,7 @@ max-width: 20vw; /* Set the maximum width */
 /* four */
 
 .container-four{
-margin-top: -50vw;
+margin-top: 20vw;
 margin-bottom: 30vw;
 }
 
@@ -357,7 +390,6 @@ margin-bottom: 30vw;
 
 .container-four .image-1 img {
     width: 25vw;
-    margin-top: 15vw;
 }
 
 .container-four .image-2,
@@ -377,15 +409,16 @@ margin-bottom: 30vw;
 }
 
 .container-four .caption1 {
+    padding-top: 3vw;
     text-align: left;
     margin-left: 37vw;
-    margin-top: -47vw;
+    margin-top: -38vw;
     width: 25vw; /* Set the maximum width */
 }
 
 .container-four .caption2 {
     text-align: left;    
-    margin-top: 37vw;
+    margin-top: -6vw;
     margin-left: 45vw;
 }
 
@@ -399,22 +432,39 @@ margin-bottom: 30vw;
 /* five */
 
 .container-five{
-margin-top: 10vw;
-margin-bottom: 30vw;
+    margin-top: 30vw;
+    margin-bottom: 60vw;
 }
 
-
 .container-five .image-1 img {
-width: 30vw;
-margin-bottom: 1vw;
-transform: rotate(20deg); 
+    padding-top: 5vw;
+    width: 22vw;
+    margin-top: 5vw;
+    margin-right: 30vw;
+    transform: rotate(20deg); 
 }
 
 .container-five .image-2 img {
-width: 30vw;
-transform: rotate(-5deg); 
-margin-left: 10vw;
+    width: 22vw;
+    margin-top: -1vw;
+    transform: rotate(-5deg); 
+    margin-right: 30vw;
 }
+
+.container-five .image-3 img {
+    width: 40vw;
+    margin-left: 25vw;
+    margin-top: -45vw;
+}
+
+.container-five .caption p{
+    margin-top: 1vw; /* Adjust margin-top as needed to move the caption down */
+    width: 20vw;
+    margin-left: 45vw;
+    text-align: left;
+}
+
+
 
 
 
@@ -422,14 +472,14 @@ margin-left: 10vw;
 
 .container-six{
 margin-bottom: 3vw;
-margin-top: 10vw;
+margin-top: 30vw;
 }
 
 
 
 .container-six .taj img{
     width: 70vw;
-    margin-top: -4vw;
+    margin-top: -12vw;
     }
 .container-six .jasmine img{
     width: 20vw;
@@ -449,3 +499,28 @@ margin-top: 10vw;
     margin-right: 30vw;
     }
     
+
+
+    .end-mandala {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .end-mandala img {
+        width: 10vw;
+        transition: transform 2s linear;
+        position: relative;
+        animation: spin 10s infinite linear;
+        z-index: 1;
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }

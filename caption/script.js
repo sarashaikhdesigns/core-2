@@ -1,29 +1,40 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const introHeading = document.querySelector('.intro h1');
-    const scrollButtons = document.querySelectorAll('.scroll-button, .scroll-button1');
+    const introDiv = document.querySelector('.intro');
 
-    introHeading.addEventListener('click', function() {
-        const targetContainer = document.querySelector('#container1');
-        toggleContainerVisibility(targetContainer);
-        scrollToElement(targetContainer);
+    // Add click event listener to the intro div
+    introDiv.addEventListener('click', function() {
+        navigateToContainer('#container1');
     });
+
+    const scrollButtons = document.querySelectorAll('.scroll-button1, .scroll-button2');
 
     scrollButtons.forEach(button => {
         button.addEventListener('click', function(event) {
-            event.preventDefault();
+            event.preventDefault(); // Prevent default scroll behavior
+            
+            // Get the target container id from the data-target attribute of the clicked button
             const targetContainerId = this.getAttribute('data-target');
-            const targetContainer = document.querySelector(`#${targetContainerId}`);
-            scrollToElement(targetContainer);
+
+            // Navigate to the target container
+            navigateToContainer(targetContainerId);
         });
     });
 
-    function toggleContainerVisibility(container) {
-        container.style.display = 'block';
+    function navigateToContainer(containerId) {
+        const container = document.querySelector(containerId);
+        if (container) {
+            container.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     }
 
-    function scrollToElement(element) {
-        element.scrollIntoView({
-            behavior: 'smooth'
-        });
-    }
+    // Disable default scroll behavior
+    window.addEventListener('wheel', function(e) {
+        e.preventDefault();
+    }, { passive: false });
+
+    window.addEventListener('touchmove', function(e) {
+        e.preventDefault();
+    }, { passive: false });
 });
