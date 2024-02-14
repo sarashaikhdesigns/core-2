@@ -148,6 +148,7 @@ background:  #240000;
     z-index: 1; /* Ensure the navigation elements are above other content */
     margin-top: -450px; /* Adjust the margin as needed */
     margin-bottom: 100px; /* Adjust the margin as needed */
+    cursor: pointer;
 }
 
 .scroll-button1 img,
@@ -179,6 +180,21 @@ body {
     margin-top: 10vw;
     margin-bottom: 10vw;
 }
+
+
+.container-one .background-one{
+        position: relative; /* Position fixed to cover the whole page */
+        margin-top: -100vw;
+        z-index: -3; /* Set z-index to ensure it's behind other content */
+    }
+    
+    .container-one .background-one img {
+        object-fit: cover; /* Ensure the image covers the entire background */
+        width: 100vw;
+        height: 120vw;
+    }
+    
+
 
 
 .container-one .image-1 {
@@ -419,12 +435,12 @@ margin-bottom: 30vw;
 .container-four .caption2 {
     text-align: left;    
     margin-top: -6vw;
-    margin-left: 45vw;
+    margin-left: 42vw;
 }
 
 .container-four .caption3 {
     text-align: left;
-    margin-top: -5vw;
+    margin-top: -10vw;
     margin-left: 67vw;
     max-width: 10vw; /* Set the maximum width */
 }
@@ -459,7 +475,7 @@ margin-bottom: 30vw;
 
 .container-five .caption p{
     margin-top: 1vw; /* Adjust margin-top as needed to move the caption down */
-    width: 20vw;
+    width: 25vw;
     margin-left: 45vw;
     text-align: left;
 }
