@@ -47,7 +47,7 @@ p {
 
 .intro:hover h1::before {
     margin-bottom: 50px;
-    line-height: 1;
+    width: 40vw;
     letter-spacing: -3px; /* Adjust the value as needed */
     content: "click to read the greatest love story of all time"; /* Set content on hover */
     font-style: italic;
