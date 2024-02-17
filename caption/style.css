@@ -365,22 +365,41 @@ max-width: 20vw; /* Set the maximum width */
 z-index: 3; 
 }
 
+.container-three{
+    position: relative;
+    height: 100vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
 
 
 .container-three .mandala2 {
+    position: absolute;
     display: flex;
     justify-content: center;
+    align-items: center; 
     z-index: -3; 
-    opacity: 0.8;
+    opacity: 0.6;
+    width: 100%; /* Ensuring the mandala container spans the entire width */
+    height: 100%; /* Ensuring the mandala container spans the entire height */
 }
 
 .container-three .mandala-img2 {
     width: 70vw;
-    transition: transform 2s linear;
     position: relative;
     animation: spin 10s infinite linear;
-    margin-top: -55vw;
+    margin-top: -150vw;
+    height: auto; /* Ensuring aspect ratio is maintained */
 }
+
+
+
+
+
+
+
+
+
 
 @keyframes spin {
     0% {
@@ -389,12 +408,6 @@ z-index: 3;
     100% {
         transform: rotate(360deg);
     }
-}
-.container-three{
-    position: relative;
-    height: 100vw;
-    margin-top: 10vw;
-    margin-bottom: 10vw;
 }
 
 
@@ -499,11 +512,13 @@ margin-bottom: 30vw;
 .container-five .background-five{
     margin-top: -30vw;
     z-index: -5; 
+    position: absolute;
 }
 
 .container-five .background-five img {
     width: 100vw;
     opacity: .6;
+
 }
 
 
