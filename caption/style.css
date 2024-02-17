@@ -268,17 +268,6 @@ body {
 /* two */
 
 
-
-.container-two .background-two{
-    margin-top: -40vw;
-    z-index: -3; /* Set z-index to ensure it's behind other content */
-}
-
-.container-two .background-two img {
-    width: 100vw;
-    opacity: .8;
-}
-
 .container-two {
     margin-top: 30vw;
     margin-bottom: 30vw;
@@ -340,10 +329,47 @@ body {
 /* three */
 
 
+.container-three .image-1 img{
+width: 50vw;
+z-index: 3; 
+}
+
+.container-three .hands img{
+width: 30%;
+margin-right: 100vw;
+margin-top: -10vw;
+z-index: 3; 
+}
+
+.container-three .flower img{
+width: 20%;
+margin-right: 35vw;
+margin-top: -70vw;
+z-index: 3; 
+}
+
+
+.container-three .date p{
+text-align: right;
+margin-right: 25vw;
+padding-top: 3vw;
+z-index: 3; 
+}
+
+
+.container-three .caption {
+text-align: left;
+margin-left: 55vw;
+margin-top: -12vw;
+max-width: 20vw; /* Set the maximum width */
+z-index: 3; 
+}
+
+
+
 .container-three .mandala2 {
     display: flex;
     justify-content: center;
-    position: relative;
     z-index: -3; 
     opacity: 0.8;
 }
@@ -353,7 +379,7 @@ body {
     transition: transform 2s linear;
     position: relative;
     animation: spin 10s infinite linear;
-    margin-top: -50vw;
+    margin-top: -60vw;
 }
 
 @keyframes spin {
@@ -370,43 +396,6 @@ body {
     margin-top: 10vw;
     margin-bottom: 10vw;
 }
-
-
-.container-three .image-1 img{
-width: 50vw;
-z-index: 1; 
-}
-
-.container-three .hands img{
-width: 30%;
-margin-right: 100vw;
-margin-top: -10vw;
-z-index: 2; 
-}
-
-.container-three .flower img{
-width: 20%;
-margin-right: 35vw;
-margin-top: -70vw;
-z-index: 3; 
-}
-
-
-.container-three .date p{
-text-align: right;
-margin-right: 25vw;
-padding-top: 3vw;
-}
-
-
-.container-three .caption {
-text-align: left;
-margin-left: 55vw;
-margin-top: -12vw;
-max-width: 20vw; /* Set the maximum width */
-}
-
-
 
 
 
@@ -504,6 +493,20 @@ margin-bottom: 30vw;
 
 /* five */
 
+
+
+
+.container-five .background-five{
+    margin-top: -30vw;
+    z-index: -5; 
+}
+
+.container-five .background-five img {
+    width: 100vw;
+    opacity: .6;
+}
+
+
 .container-five{
     margin-top: 20vw;
     margin-bottom: 60vw;
@@ -515,6 +518,7 @@ margin-bottom: 30vw;
     margin-top: 5vw;
     margin-right: 30vw;
     transform: rotate(20deg); 
+    z-index: 3; 
 }
 
 .container-five .image-2 img {
@@ -522,12 +526,14 @@ margin-bottom: 30vw;
     margin-top: -1vw;
     transform: rotate(-5deg); 
     margin-right: 30vw;
+    z-index: 3; 
 }
 
 .container-five .image-3 img {
     width: 40vw;
     margin-left: 25vw;
     margin-top: -45vw;
+    z-index: 3; 
 }
 
 .container-five .caption p{
@@ -573,6 +579,13 @@ margin-top: 30vw;
     }
     
 
+
+.container-six .caption p{
+    margin-top: -7xvw; /* Adjust margin-top as needed to move the caption down */
+    width: 25vw;
+    margin-left: 53vw;
+    text-align: left;
+}
 
     .end-mandala {
         display: flex;
