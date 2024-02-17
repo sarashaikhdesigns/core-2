@@ -558,13 +558,9 @@ margin-top: 30vw;
 
 .container-six .taj img{
     width: 70vw;
-    margin-top: -12vw;
+    margin-top: -8vw;
     }
-.container-six .jasmine img{
-    width: 20vw;
-    margin-top: -25vw;
-    margin-left: 25vw;
-    }
+
 
 .container-six .image-1 img{
     width: 25vw;
@@ -581,7 +577,7 @@ margin-top: 30vw;
 
 
 .container-six .caption p{
-    margin-top: -7xvw; /* Adjust margin-top as needed to move the caption down */
+    margin-top: -9vw; /* Adjust margin-top as needed to move the caption down */
     width: 25vw;
     margin-left: 53vw;
     text-align: left;
@@ -595,6 +591,7 @@ margin-top: 30vw;
     }
     
     .end-mandala img {
+        margin-top: 2vw;
         width: 10vw;
         transition: transform 2s linear;
         position: relative;
@@ -626,7 +623,7 @@ margin-top: 30vw;
     
     .story-page h1{
         font-family: "pritzious", sans-serif;
-        margin-top: 6vw;
+        margin-top: 3vw;
         font-size: 50px;
         text-align: center; /* Centering the heading text */
     }
