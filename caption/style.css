@@ -651,3 +651,27 @@ margin-top: 30vw;
         margin-bottom: -1vw;
     }
     
+
+    
+    .marquee-container {
+        position: fixed;
+        width: 200%;
+        height: 100%;
+        z-index: -5;
+    }
+    
+    .marquee-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .6;
+    }
+    
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
