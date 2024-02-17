@@ -379,7 +379,7 @@ z-index: 3;
     transition: transform 2s linear;
     position: relative;
     animation: spin 10s infinite linear;
-    margin-top: -60vw;
+    margin-top: -55vw;
 }
 
 @keyframes spin {
