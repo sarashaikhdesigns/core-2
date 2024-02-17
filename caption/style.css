@@ -157,7 +157,7 @@ background:  #240000;
     height: auto;
     cursor: pointer;
     margin-top: 10px;
-    margin-left: -90vw;
+    margin-right: -90vw;
 }
 
 .scroll-button1 img {
@@ -247,6 +247,22 @@ body {
 .home-button p {
     color: antiquewhite;
     stroke: none;
+    font-size: 25px;
+}
+
+
+.story-button {
+    position: fixed;
+    bottom: 1vw;
+    left: 1vw;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.story-button p {
+    color: antiquewhite;
+    stroke: none;
+    font-size: 25px;
 }
 
 
