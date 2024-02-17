@@ -42,13 +42,14 @@ p {
 .intro h1::before {
     content: "எல்லா காலத்திலும் சிறந்த காதல் கதையைப் படிக்க கிளிக் செய்யவும்"; /* Set initial content */
     display: block;
+    font-size: 3vw;
 }
 
 .intro:hover h1:before {
     margin-bottom: 50px;
     width: 50vw;
-    line-height: 7vw;
-    font-size: 7vw;
+    line-height: 6vw;
+    font-size: 6vw;
     letter-spacing: -3px; /* Adjust the value as needed */
     content: "click to read the greatest love story of all time"; /* Set content on hover */
     font-style: italic;
@@ -61,7 +62,6 @@ p {
 .intro a {
     text-decoration: none;
     color: inherit; /* Inherit the color from the parent element */
-    font-weight: bold;
   }
 
 
@@ -195,9 +195,7 @@ body {
         height: 120vw;
     }
     
-
-
-
+    
 .container-one .image-1 {
     position: relative;
     z-index: 1; 
@@ -327,6 +325,30 @@ body {
 /* three */
 
 
+.container-three .mandala2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: -3; 
+    opacity: 0.8;
+}
+
+.container-three .mandala-img2 {
+    width: 70vw;
+    transition: transform 2s linear;
+    position: relative;
+    animation: spin 10s infinite linear;
+    margin-top: -50vw;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 .container-three{
     position: relative;
     height: 100vw;
@@ -337,18 +359,21 @@ body {
 
 .container-three .image-1 img{
 width: 50vw;
+z-index: 1; 
 }
 
 .container-three .hands img{
 width: 30%;
 margin-right: 100vw;
 margin-top: -10vw;
+z-index: 2; 
 }
 
 .container-three .flower img{
 width: 20%;
 margin-right: 35vw;
 margin-top: -70vw;
+z-index: 3; 
 }
 
 
@@ -465,12 +490,12 @@ margin-bottom: 30vw;
 /* five */
 
 .container-five{
-    margin-top: 30vw;
+    margin-top: 20vw;
     margin-bottom: 60vw;
 }
 
 .container-five .image-1 img {
-    padding-top: 10vw;
+    padding-top: 1vw;
     width: 22vw;
     margin-top: 5vw;
     margin-right: 30vw;
