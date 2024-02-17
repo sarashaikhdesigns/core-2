@@ -613,25 +613,29 @@ margin-top: 30vw;
 
 
 
+/* story */
 
-
-
-
-    /* story */
-
-.story-page{
-    width: 70%;
-    margin-left: 10vw;
-}
-
-
-.story-page h1{
-    margin-top: 10vw;
-    margin-bottom: 5vw;
-    font-size: 30px;
-}
-
-.story-page p{
-    font-size: 20px;
-    text-align: left;
-}
+    .story-page{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .story-page h1{
+        font-family: "pritzious", sans-serif;
+        margin-top: 6vw;
+        font-size: 50px;
+        text-align: center; /* Centering the heading text */
+    }
+    
+    .story-page p{
+        font-size: 30px;
+        text-align: left;
+        max-width: 800px; /* Example maximum width for paragraphs */
+        text-indent: 4vw; /* Indentation of 2em (adjust as needed) */
+        margin-bottom: -1vw;
+    }
+    
