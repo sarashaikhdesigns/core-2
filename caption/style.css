@@ -35,7 +35,7 @@ p {
     margin-bottom: -30vw;
     text-align: center; /* Center align the text */
     font-family: "Noto Serif Tamil", serif;
-    font-style: normal;
+    font-style: light;
     line-height: 1.2; /* You can adjust this value */
 }
 
@@ -52,7 +52,7 @@ p {
     font-size: 6vw;
     letter-spacing: -3px; /* Adjust the value as needed */
     content: "click to read the greatest love story of all time"; /* Set content on hover */
-    font-style: italic;
+    font-style: light;
     font-family: "pritzious", sans-serif;
     transition: content 1s ease; /* Add transition */
 
