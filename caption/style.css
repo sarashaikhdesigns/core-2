@@ -157,7 +157,7 @@ background:  #240000;
     height: auto;
     cursor: pointer;
     margin-top: 10px;
-    margin-right: -90vw;
+    margin-right: -95vw;
 }
 
 .scroll-button1 img {
@@ -262,7 +262,7 @@ body {
 .story-button p {
     color: antiquewhite;
     stroke: none;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 
