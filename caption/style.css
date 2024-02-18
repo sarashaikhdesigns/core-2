@@ -15,41 +15,40 @@ p {
     color: antiquewhite;
     font-family: "pritzious", sans-serif;
     font-size: 25px;
-    line-height: 1; /* Adjust the value as needed */
+    line-height: 1; 
 }
 
 .intro {
-    z-index: 3;
+    z-index: 5;
     position: absolute; 
-    bottom: 20vw; 
-    left: 50%; /* Center the container horizontally */
-    transform: translateX(-50%); /* Center the container horizontally */
+    width: 800px;
+    bottom: 300px;
+    left: 50%; 
+    margin-top: 200px;
+    transform: translateX(-50%); 
     transition: transform 0.3s ease-in-out;
-    text-align: center; /* Center align the text */
-    cursor: pointer; /* Add cursor pointer */
+    text-align: center; 
+    cursor: pointer; 
 }
 
 
 .intro h1 {
-    font-size: 4vw;
-    margin-bottom: -30vw;
-    text-align: center; /* Center align the text */
+    position: absolute;
+    text-align: center; 
     font-family: "Noto Serif Tamil", serif;
     font-style: light;
-    line-height: 1.2; /* You can adjust this value */
+    line-height: 1.2; 
 }
 
 .intro h1::before {
-    content: "எல்லா காலத்திலும் சிறந்த காதல் கதையைப் படிக்க கிளிக் செய்யவும்"; /* Set initial content */
+    content: "எல்லா காலத்திலும் சிறந்த காதல் கதையைப் படிக்க கிளிக் செய்யவும்"; 
     display: block;
-    font-size: 3vw;
+    font-size: 50px;
 }
 
 .intro:hover h1:before {
-    margin-bottom: 50px;
-    width: 50vw;
-    line-height: 6vw;
-    font-size: 6vw;
+    line-height: 100px;
+    font-size: 100px;
     letter-spacing: -3px; /* Adjust the value as needed */
     content: "click to read the greatest love story of all time"; /* Set content on hover */
     font-style: light;
@@ -67,7 +66,6 @@ p {
 
 .home{
 background:  #240000; 
-
 }
 
 
@@ -78,26 +76,25 @@ background:  #240000;
 }
 
 .border {
-    z-index: 2;
+    z-index: 4;
     position: absolute; 
-    margin-top: -70vw;
+    margin-top: -850px;
+    margin-bottom: 2000px;
     left: 0;
 }
 
 .border-img {
-    width: 100vw;
-    height: 40vw;
+    width: 1800px;
+    height: 600px;
 }
 
 .box {
     position: absolute;
-    margin-top: -60vw;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh; /* Set the height to cover 50% of the screen */
+    margin-top: -300px;
+    width: 2000px;
+    height: 400px; 
     background: linear-gradient(to bottom, #240000, #650000); /* Adjust the colors as needed */
-    z-index: 1; 
+    z-index: 3; 
 }
 
 
@@ -105,18 +102,18 @@ background:  #240000;
 .mandala {
     display: flex;
     justify-content: center;
-    margin-bottom: -450px;
+    margin-bottom: -4500px;
     position: relative;
-    z-index: 1;
-    margin-bottom: -5vw;
+    z-index: 2;
+    margin-bottom: -50px;
 }
 
 .mandala-img {
-    width: 100vw;
+    width: 1200px;
     transition: transform 2s linear;
     position: relative;
     animation: spin 10s infinite linear;
-    z-index: 1;
+    z-index: 2;
 }
 
 @keyframes spin {
@@ -183,8 +180,8 @@ body {
 
 .container-one {
     position: relative;
-    margin-top: 10vw;
-    margin-bottom: 10vw;
+    margin-top: 1000px;
+    margin-bottom: 100px;
 }
 
 
