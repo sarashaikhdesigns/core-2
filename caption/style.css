@@ -154,7 +154,7 @@ background:  #240000;
 
 .scroll-button1 img,
 .scroll-button2 img {
-    width: 2vw;
+    width: 4vw;
     height: auto;
     cursor: pointer;
     margin-top: 10px;
@@ -275,7 +275,7 @@ body {
 }
 
 .container-two .image-1{
-    padding-top: 3vw;
+    padding-top: 1vw;
     position: relative;
     z-index: 3;
   }
@@ -315,7 +315,7 @@ body {
   }
   .container-two .caption2 {
   text-align: left;
-  margin-top: 36.5vw;
+  margin-top: 33.5vw;
   margin-left: 50vw;
   max-width: 30vw; 
   z-index: 2;
@@ -454,7 +454,7 @@ margin-bottom: 30vw;
     transform: rotate(15deg);
     width: 10vw;
     display: inline-block;    
-    margin-top: -10vw;
+    margin-top: -13vw;
 }
 
 .container-four .image-3 img {
@@ -493,7 +493,7 @@ margin-bottom: 30vw;
 
 .container-four .caption2 {
     text-align: left;    
-    margin-top: -6vw;
+    margin-top: -8vw;
     margin-left: 42vw;
 }
 
