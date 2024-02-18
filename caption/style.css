@@ -582,7 +582,18 @@ margin-bottom: 30vw;
 .container-five .background-five img {
     width: 100vw;
     opacity: .6;
+    animation: sway 8s ease-in-out infinite alternate;
+}
 
+
+
+@keyframes sway {
+    0% {
+        transform: translateX(-1%);
+    }
+    100% {
+        transform: translateX(1%);
+    }
 }
 
 
