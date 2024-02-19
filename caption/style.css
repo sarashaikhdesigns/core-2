@@ -14,7 +14,7 @@ h1 {
 p {
     color: antiquewhite;
     font-family: "pritzious", sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 1; 
 }
 
@@ -543,15 +543,15 @@ text-align: center;
 .container-four .caption2 {
     position: relative;
     text-align: left;    
-    margin-top: -80px;
-    margin-left: 40vw;
+    margin-top: -100px;
+    margin-left: 42vw;
 }
 
 .container-four .caption3 {
     position: relative;
     text-align: left;
-    margin-top: -120px;
-    margin-left: 67vw;
+    margin-top: -150px;
+    margin-left: 66vw;
     width: 200px; /* Set the maximum width */
 }
 
@@ -616,7 +616,7 @@ text-align: center;
 
 .container-five .caption p{
     margin-top: 10px; /* Adjust margin-top as needed to move the caption down */
-    width: 250px;
+    width: 450px;
     margin-left: 450px;
     text-align: left;
 }
@@ -637,7 +637,7 @@ text-align: center;
 
 .container-six .background-six{
     position: relative; /* Position fixed to cover the whole page */
-    margin-top: -1100px;
+    margin-top: -1000px;
     margin-left: -200px;
     z-index: -3; /* Set z-index to ensure it's behind other content */
 }
@@ -753,7 +753,7 @@ text-align: center;
     }
     
     .story-page p{
-        font-size: 30px;
+        font-size: 40px;
         text-align: left;
         width: 800px; /* Example maximum width for paragraphs */
         text-indent: 40px; /* Indentation of 2em (adjust as needed) */
