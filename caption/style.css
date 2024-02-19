@@ -635,6 +635,19 @@ text-align: center;
 
 
 
+.container-six .background-six{
+    position: relative; /* Position fixed to cover the whole page */
+    margin-top: -1100px;
+    margin-left: -200px;
+    z-index: -3; /* Set z-index to ensure it's behind other content */
+}
+
+.container-six .background-six img {
+    object-fit: cover; /* Ensure the image covers the entire background */
+    width: 2000px;
+    height: 1200px;
+}
+
 .container-six .taj img{
     width: 1000px;
     margin-top: -250px;
