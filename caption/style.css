@@ -765,3 +765,588 @@ text-align: center;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+@media only screen and (max-width: 768px) {
+    
+
+.intro {
+    width: 500px;
+    margin-top: -200px;
+}
+
+.intro h1::before {
+    font-size: 30px;
+}
+
+.intro:hover h1:before {
+    font-size: 60px;
+    line-height: 1;
+   }
+
+
+
+.border {
+    margin-top: -300px;
+}
+
+.border-img {
+    width: 1200px;
+    height: auto;
+
+}
+.box {
+    margin-top: -100px;
+}
+
+
+
+.mandala {
+}
+
+.mandala-img {
+    width: 700px;
+}
+
+.nav1,
+.nav2,
+.nav3,
+.nav4,
+.nav5 {
+
+}
+
+.scroll-button1 img,
+.scroll-button2 img {
+    width: 40px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 80vw;
+}
+
+
+.home-button {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    padding: 10px;
+}
+
+.home-button p {
+    font-size: 25px;
+}
+
+
+.story-button {
+    position: fixed;
+    bottom: -70px;
+    left: -70px;
+    padding: 100px;
+}
+
+.story-button p {
+
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/* one */
+
+
+.container-one .background-one{
+        position: relative; /* Position fixed to cover the whole page */
+        margin-top: -1100px;
+        margin-left: -200px;
+        z-index: -3; /* Set z-index to ensure it's behind other content */
+    }
+    
+    .container-one .background-one img {
+        object-fit: cover; /* Ensure the image covers the entire background */
+        width: 2200px;
+        height: 1200px;
+    }
+    
+    
+.container-one .image-1 {
+    position: relative;
+    z-index: 1; 
+}
+
+.container-one .image-1 img {
+    width: 650px;
+}
+
+
+
+.container-one .garland-1 img,
+.container-one .garland-2 img {
+    width: 600px;
+    position: absolute;
+    z-index: -1;
+}
+
+.container-one .garland-1 img {
+    margin-top: -500px;
+    margin-left: -600px;
+    animation-name: rotateBackAndForth1;
+}
+
+.container-one .garland-2 img {
+    margin-top: -300px;
+    margin-right: -300px;
+    animation-name: rotateBackAndForth2;
+}
+
+
+
+.container-one .date {
+    text-align: right;
+    margin-top: -10px;
+    margin-right: 25vw;
+    padding-top: 30px;
+}
+
+.container-one .caption {
+    text-align: left;
+    margin-left: 20vw;
+    margin-top: -10px;
+    width: 350px; 
+}
+
+
+
+/* two */
+
+
+
+.container-two {
+    margin-top: 300px;
+    margin-bottom: 300px;
+    position: relative;
+    text-align: center;
+}
+
+.container-two .marquee-container {
+    position: absolute;
+    width: 2000px;
+    height: 1200px;
+    overflow: hidden;
+    z-index: -20; /* Set z-index to be behind everything */
+}
+
+.container-two .marquee-container img {
+    width: 2400px; /* Double the width to create repeating effect */
+    height: 700px;
+    object-fit: cover;
+    animation: marquee 20s linear infinite;
+}
+
+.container-two .image-1 {
+    padding-top: 10px;
+    z-index: 5;
+}
+
+.container-two .image-2 {
+    z-index: 4;
+}
+
+.container-two .image-1 img {
+    width: 400px;
+    transform: rotate(12deg);
+    margin-right: 400px;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.container-two .image-2 img {
+    margin-top: -450px;
+    margin-left: 350px;
+    width: 400px;
+    z-index: 2;
+}
+
+.container-two .date p {
+    text-align: right;
+    margin-right: 25vw;
+    z-index: 2;
+}
+
+.container-two .caption1 {
+    text-align: left;
+    margin-left: 55vw;
+    margin-top: -570px;
+    width: 400px;
+    z-index: 2;
+}
+
+.container-two .caption2 {
+    text-align: left;
+    margin-top: 450px;
+    margin-left: 15vw;
+    width: 350px;
+    z-index: 6;
+}
+
+
+
+/* three */
+
+
+.container-three .image-1 img{
+width: 700px;
+z-index: 3; 
+}
+
+.container-three .hands img{
+width: 500px;
+margin-right: 1000px;
+margin-top: -100px;
+z-index: 3; 
+}
+
+.container-three .flower img{
+width: 350px;
+margin-right: 350px;
+margin-top: -900px;
+z-index: 3; 
+}
+
+
+.container-three .date p{
+text-align: right;
+margin-right: 30vw;
+padding-top: 30px;
+z-index: 3; 
+}
+
+
+.container-three .caption {
+text-align: left;
+margin-left: 55vw;
+margin-top: -280px;
+width: 300px; 
+z-index: 3; 
+}
+
+.container-three{
+    position: relative;
+    height: 1000px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+
+.container-three .mandala2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    z-index: -3; 
+    opacity: 0.6;
+    width: 100%; 
+    height: 100%; 
+}
+
+.container-three .mandala-img2 {
+    width: 900px;
+    position: relative;
+    animation: spin 10s infinite linear;
+    margin-top: -2000px;
+    height: auto; 
+}
+
+
+
+
+/* four */
+
+.container-four{
+margin-top: 300px;
+margin-bottom: 300px;
+text-align: center;
+}
+
+.container-four .photo-strip {
+    margin-top: -800px;
+    margin-left: -530px;
+    display: inline-block;
+}
+
+.container-four .strip2 {
+    animation: swayAnimation2 4s infinite alternate;
+}
+
+.container-four .image-3 {
+    display: inline-block;
+}
+
+.container-four .strip2 {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    animation: swayAnimation2 4s infinite alternate;
+}
+
+.container-four .image-2 img {
+    transform: rotate(15deg);
+    width: 150px;
+    display: inline-block;    
+    margin-top: -130px;
+}
+
+.container-four .image-3 img {
+    transform: rotate(-10deg);
+    width: 150px;
+    display: inline-block;
+}
+
+.container-four .image-1 img {
+    width: 400px;
+}
+
+.container-four .image-2,
+.container-four .image-3 {
+    display: inline-block;
+}
+
+.container-four .image-4 img {
+    margin-left: 320px;
+    margin-top: -180px;
+    width: 200px;
+}
+
+.container-four .next img {
+    width: 20%;
+    height: 7%;
+}
+
+.container-four .caption1 {
+    position: relative;
+    padding-top: 30px;
+    text-align: left;
+    margin-left: 38vw;
+    margin-top: -380px;
+    width: 350px; /* Set the maximum width */
+}
+
+.container-four .caption2 {
+    position: relative;
+    text-align: left;    
+    margin-top: -100px;
+    margin-left: 42vw;
+}
+
+.container-four .caption3 {
+    position: relative;
+    text-align: left;
+    margin-top: -150px;
+    margin-left: 66vw;
+    width: 200px; /* Set the maximum width */
+}
+
+/* five */
+
+
+
+
+.container-five .background-five{
+    margin-top: -400px;
+    z-index: -5; 
+    position: absolute;
+}
+
+.container-five .background-five img {
+    width: 1500px;
+    opacity: .6;
+    animation: sway 8s ease-in-out infinite alternate;
+}
+
+
+
+.container-five{
+    margin-top: 200px;
+    margin-bottom: 600px;
+    text-align: center;
+}
+
+.container-five .image-1 img {
+    padding-top: 10px;
+    width: 320px;
+    margin-top: 100px;
+    margin-right: 500px;
+    transform: rotate(20deg); 
+    z-index: 3; 
+}
+
+.container-five .image-2 img {
+    width: 320px;
+    margin-top: -30px;
+    transform: rotate(-5deg); 
+    margin-right: 500px;
+    z-index: 3; 
+}
+
+.container-five .image-3 img {
+    width: 600px;
+    margin-left: 250px;
+    margin-top: -650px;
+    z-index: 3; 
+}
+
+.container-five .caption p{
+    margin-top: 10px; /* Adjust margin-top as needed to move the caption down */
+    width: 450px;
+    margin-left: 450px;
+    text-align: left;
+}
+
+
+
+
+
+/* six */
+
+.container-six{
+margin-bottom: 30px;
+margin-top: 300px;
+text-align: center;
+}
+
+
+
+.container-six .background-six{
+    position: relative; /* Position fixed to cover the whole page */
+    margin-top: -1000px;
+    margin-left: -200px;
+    z-index: -3; /* Set z-index to ensure it's behind other content */
+}
+
+.container-six .background-six img {
+    object-fit: cover; /* Ensure the image covers the entire background */
+    width: 2000px;
+    height: 1200px;
+}
+
+.container-six .taj img{
+    width: 1000px;
+    margin-top: -250px;
+    }
+
+
+.container-six .image-1 img{
+    width: 350px;
+    margin-left: 330px;
+    margin-top: -220px;
+    }
+    
+.container-six .image-2 img{
+    width: 400px;
+    margin-top: -110px;
+    margin-right: 300px;
+    }
+    
+
+
+.container-six .caption p{
+    margin-top: -110px; /* Adjust margin-top as needed to move the caption down */
+    width: 450px;
+    margin-left: 54vw;
+    text-align: left;
+}
+
+    .end-mandala {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .end-mandala img {
+        margin-top: 5px;
+        width: 200px;
+        transition: transform 2s linear;
+        position: relative;
+        animation: spin 10s infinite linear;
+        z-index: 1;
+    }
+    
+
+
+/* story */
+
+    .story-page{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .story-page {
+        width: 100%;
+        height: 100%;
+        line-height: 1.6;
+        color: #fff;
+        position: relative;
+    }
+    
+    .story-page::after {
+        content: '';
+        position: absolute;
+        width: 2000px;
+        height: 1000px;
+        background: radial-gradient(circle, #740000 0%, #150000 100%);
+        animation: pulsate 5s infinite;
+        z-index: -1;
+    }
+        .story-page h1{
+        margin-top: 30px;
+        font-size: 50px;
+        text-align: center; /* Centering the heading text */
+    }
+    
+    .story-page p{
+        font-size: 40px;
+        text-align: left;
+        width: 800px; /* Example maximum width for paragraphs */
+        text-indent: 40px; /* Indentation of 2em (adjust as needed) */
+        margin-bottom: -10px;
+    }
+    
+
+
+
+
+}
