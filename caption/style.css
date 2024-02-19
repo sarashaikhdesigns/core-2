@@ -725,11 +725,9 @@ text-align: center;
     .story-page::after {
         content: '';
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 200%;
-        height: 200%;
-        background: radial-gradient(circle, #650000 0%, #240000 100%);
+        width: 2000px;
+        height: 1000px;
+        background: radial-gradient(circle, #740000 0%, #150000 100%);
         animation: pulsate 5s infinite;
         z-index: -1;
     }
