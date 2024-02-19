@@ -213,7 +213,7 @@ p {
 
 .container-one .background-one{
         position: relative; /* Position fixed to cover the whole page */
-        margin-top: -800px;
+        margin-top: -1100px;
         margin-left: -200px;
         z-index: -3; /* Set z-index to ensure it's behind other content */
     }
