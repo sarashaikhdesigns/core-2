@@ -163,7 +163,8 @@ p {
 
 .home{
     background:  #240000; 
-    }
+    width: 100%;
+    height: 100%;    }
     
 
 .home-button {
@@ -441,7 +442,7 @@ z-index: 3;
     width: 900px;
     position: relative;
     animation: spin 10s infinite linear;
-    margin-top: -2000px;
+    margin-top: -2200px;
     height: auto; 
 }
 
@@ -511,7 +512,8 @@ text-align: center;
 }
 
 .container-four .image-1 img {
-    width: 400px;
+    width: 350px;
+    margin-top: -20px;
 }
 
 .container-four .image-2,
@@ -520,7 +522,7 @@ text-align: center;
 }
 
 .container-four .image-4 img {
-    margin-left: 320px;
+    margin-left: 360px;
     margin-top: -180px;
     width: 200px;
 }
@@ -532,25 +534,25 @@ text-align: center;
 
 .container-four .caption1 {
     position: relative;
-    padding-top: 30px;
+    padding-top: 10px;
     text-align: left;
     margin-left: 38vw;
     margin-top: -380px;
-    width: 350px; /* Set the maximum width */
+    width: 450px; /* Set the maximum width */
 }
 
 .container-four .caption2 {
     position: relative;
     text-align: left;    
     margin-top: -100px;
-    margin-left: 42vw;
+    margin-left: 40vw;
 }
 
 .container-four .caption3 {
     position: relative;
     text-align: left;
     margin-top: -150px;
-    margin-left: 66vw;
+    margin-left: 70vw;
     width: 200px; /* Set the maximum width */
 }
 
@@ -649,7 +651,6 @@ text-align: center;
 
 .container-six .taj img{
     width: 1000px;
-    margin-top: -250px;
     }
 
 
@@ -682,8 +683,8 @@ text-align: center;
     }
     
     .end-mandala img {
-        margin-top: 5px;
-        width: 200px;
+        margin-top: -15px;
+        width: 150px;
         transition: transform 2s linear;
         position: relative;
         animation: spin 10s infinite linear;
