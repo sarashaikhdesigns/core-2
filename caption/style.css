@@ -1259,15 +1259,11 @@ text-align: center;
     }
         .story-page h1{
         margin-top: 30px;
-        font-size: 50px;
-        text-align: center; /* Centering the heading text */
+        font-size: 40px;
     }
     
     .story-page p{
-        font-size: 40px;
-        text-align: left;
-        width: 800px; /* Example maximum width for paragraphs */
-        text-indent: 40px; /* Indentation of 2em (adjust as needed) */
+        font-size: 30px;
         margin-bottom: -10px;
     }
     
