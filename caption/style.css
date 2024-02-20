@@ -790,8 +790,13 @@ text-align: center;
 @media only screen and (max-width: 768px) {
     
 
+p{
+    font-size: 20px;
+}
+
 .intro {
-    width: 500px;
+    width: 300px;
+    margin-top: 400px;
 }
 
 .intro h1::before {
@@ -894,7 +899,7 @@ text-align: center;
 }
 
 .container-one .image-1 img {
-    width: 400px;
+    width: 300px;
 }
 
 
