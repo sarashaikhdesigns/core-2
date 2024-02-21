@@ -907,25 +907,23 @@ p{
 
 .container-one .garland-1 img,
 .container-one .garland-2 img {
-    width: 500px;
+    width: 300px;
 }
 
 .container-one .garland-1 img {
-    margin-top: -500px;
-    margin-left: -500px;
+    margin-top: -300px;
+    margin-left: -250px;
 }
 
 .container-one .garland-2 img {
-    margin-top: -300px;
-    margin-right: -400px;
+    margin-top: -200px;
+    margin-right: -300px;
 }
 
 
 
-.container-one .date {
-    margin-top: -10px;
-    margin-right: 25vw;
-    padding-top: 30px;
+.container-one .date p{
+    margin-top: 200px;
 }
 
 .container-one .caption {
