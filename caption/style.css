@@ -972,7 +972,7 @@ p{
 
 .container-two .caption1 {
     width: 350px;
-    margin-top: -450px;
+    margin-top: -350px;
     margin-left: 150px;
 }
 
@@ -987,7 +987,7 @@ p{
 
 
 .container-three .image-1 img{
-width: 400px;
+width: 300px;
 }
 
 .container-three .hands img{
@@ -1003,13 +1003,13 @@ width: 150px;
 
 .container-three .date p{
 margin-right: 30vw;
-padding-top: 30px;
+padding-top: 100px;
 }
 
 
 .container-three .caption {
 margin-left: 35vw;
-margin-top: -40px;
+margin-top: -20px;
 padding-bottom: 100px;
 width: 300px; 
 }
@@ -1069,9 +1069,9 @@ text-align: center;
 }
 
 .container-four .image-4 img {
-    margin-left: 320px;
+    margin-left: 220px;
     margin-top: -180px;
-    width: 150px;
+    width: 100px;
 }
 
 .container-four .next img {
@@ -1100,7 +1100,7 @@ text-align: center;
     text-align: left;
     margin-top: -10px;
     margin-left: 26vw;
-    width: 350px; /* Set the maximum width */
+    width: 250px; /* Set the maximum width */
 }
 
 /* five */
@@ -1110,10 +1110,11 @@ text-align: center;
 
 .container-five .background-five{
     margin-top: -400px;
+    margin-bottom: 100px;
 }
 
 .container-five .background-five img {
-    width: 1500px;
+    width: 1000px;
 }
 
 
@@ -1125,31 +1126,28 @@ text-align: center;
 }
 
 .container-five .image-1 img {
-    padding-top: 10px;
-    width: 220px;
+    padding-top: 50px;
+    width: 180px;
     margin-top: 100px;
-    margin-right: 500px;
-    transform: rotate(20deg); 
-    z-index: 3; 
+    margin-left: 40px;
 }
 
 .container-five .image-2 img {
-    width: 220px;
+    width: 180px;
     margin-top: -30px;
-    transform: rotate(-5deg); 
-    margin-right: 500px;
-    z-index: 3; 
+    margin-left: 40px;
 }
 
 .container-five .image-3 img {
-    width: 400px;
-    margin-left: 250px;
+    width: 300px;
+    margin-left: 150px;
     margin-top: -650px;
     z-index: 3; 
 }
 
 .container-five .caption p{
-    margin-top: 10px; /* Adjust margin-top as needed to move the caption down */
+    margin-top: 10px; 
+    margin-bottom: 100px;
     width: 450px;
     margin-left: 50px;
     text-align: left;
