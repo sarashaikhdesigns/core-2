@@ -928,6 +928,8 @@ p{
 }
 
 .container-one .caption {
+    margin-top: 10px;
+    margin-bottom: 70px;
     width: 350px; 
 }
 
@@ -972,9 +974,9 @@ p{
 
 
 .container-two .caption1 {
-    width: 350px;
+    width: 200px;
     margin-top: -350px;
-    margin-left: 150px;
+    margin-left: 30vw;
 }
 
 .container-two .caption2 {
