@@ -1185,19 +1185,21 @@ text-align: center;
 }
 
 .container-six .taj img{
-    width: 1000px;
-    margin-top: -250px;
+    width: 400px;
+    margin-top: -450px;
     }
 
 
 .container-six .image-1 img{
-    width: 350px;
+    width: 200px;
+    height: 150px;
     margin-left: 330px;
     margin-top: -220px;
     }
     
 .container-six .image-2 img{
-    width: 400px;
+    width: 200px;
+    height: 100px;
     margin-top: -110px;
     margin-right: 300px;
     }
@@ -1205,26 +1207,18 @@ text-align: center;
 
 
 .container-six .caption p{
-    margin-top: -110px; /* Adjust margin-top as needed to move the caption down */
-    width: 450px;
-    margin-left: 54vw;
-    text-align: left;
+    margin-top: 10px; /* Adjust margin-top as needed to move the caption down */
+    width: 250px;
+    margin-left: 34vw;
+
 }
 
-    .end-mandala {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        z-index: 1;
-    }
+
     
     .end-mandala img {
         margin-top: 5px;
-        width: 200px;
-        transition: transform 2s linear;
-        position: relative;
-        animation: spin 10s infinite linear;
-        z-index: 1;
+        width: 100px;
+  
     }
     
 
