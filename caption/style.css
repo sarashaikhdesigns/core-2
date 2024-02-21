@@ -930,7 +930,8 @@ p{
 .container-one .caption {
     margin-top: 10px;
     margin-bottom: 70px;
-    width: 350px; 
+    margin-left: 20vw;
+    width: 300px; 
 }
 
 
@@ -974,9 +975,9 @@ p{
 
 
 .container-two .caption1 {
-    width: 200px;
-    margin-top: -350px;
-    margin-left: 30vw;
+    width: 250px;
+    margin-top: -400px;
+    margin-left: 25vw;
 }
 
 .container-two .caption2 {
@@ -1005,16 +1006,18 @@ width: 150px;
 
 
 .container-three .date p{
-margin-right: 30vw;
 padding-top: 100px;
 }
 
+.container-three .date{
+    margin-right: -10vw;
+}
 
 .container-three .caption {
-margin-left: 35vw;
+margin-left: 15vw;
 margin-top: -20px;
-padding-bottom: 100px;
-width: 300px; 
+padding-bottom: -100px;
+width: 200px; 
 }
 
 .container-three{
@@ -1027,7 +1030,7 @@ width: 300px;
 
 .container-three .mandala-img2 {
     width: 500px;
-    margin-top: -2500px;
+    margin-top: -2800px;
 }
 
 
@@ -1086,9 +1089,10 @@ text-align: center;
     position: relative;
     padding-top: 30px;
     text-align: left;
-    margin-left: 25vw;
+    margin-left: 30vw;
     margin-top: -380px;
-    width: 350px; /* Set the maximum width */
+    padding-bottom: 10px;
+    width: 200px; /* Set the maximum width */
 }
 
 .container-four .caption2 {
@@ -1130,19 +1134,19 @@ text-align: center;
 
 .container-five .image-1 img {
     padding-top: 50px;
-    width: 180px;
+    width: 150px;
     margin-top: 100px;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 
 .container-five .image-2 img {
-    width: 180px;
+    width: 150px;
     margin-top: -30px;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 
 .container-five .image-3 img {
-    width: 300px;
+    width: 250px;
     margin-left: 150px;
     margin-top: -650px;
     z-index: 3; 
@@ -1151,7 +1155,7 @@ text-align: center;
 .container-five .caption p{
     margin-top: 10px; 
     margin-bottom: 100px;
-    width: 450px;
+    width: 350px;
     margin-left: 50px;
     text-align: left;
 }
@@ -1172,43 +1176,39 @@ text-align: center;
 
 .container-six .background-six{
     position: relative; /* Position fixed to cover the whole page */
-    margin-top: -1000px;
+    margin-top: -800px;
     margin-left: -200px;
     z-index: -3; /* Set z-index to ensure it's behind other content */
 }
 
 .container-six .background-six img {
-    object-fit: cover; /* Ensure the image covers the entire background */
-    width: 2000px;
-    height: 1200px;
+    width: 1000px;
+    height: 900px;
 }
 
 .container-six .taj img{
     width: 400px;
-    margin-top: -450px;
-    }
+}
 
 
 .container-six .image-1 img{
-    width: 200px;
-    height: 150px;
-    margin-left: 330px;
-    margin-top: -220px;
+    width: 150px;
+    margin-left: 33vw;
+    margin-top: -40px;
     }
     
 .container-six .image-2 img{
-    width: 200px;
-    height: 100px;
+    width: 150px;
     margin-top: -110px;
-    margin-right: 300px;
+    margin-right: 30vw;
     }
     
 
 
 .container-six .caption p{
     margin-top: 10px; /* Adjust margin-top as needed to move the caption down */
-    width: 250px;
-    margin-left: 34vw;
+    width: 300px;
+    margin-left: 14vw;
 
 }
 
