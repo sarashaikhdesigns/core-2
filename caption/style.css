@@ -232,6 +232,7 @@ p {
 
 .container-one .image-1 img {
     width: 650px;
+    margin-top: -10px;
 }
 
 
@@ -289,9 +290,9 @@ p {
 
 .container-one .caption {
     text-align: left;
-    margin-left: 20vw;
-    margin-top: -10px;
-    width: 350px; 
+    margin-left: 25vw;
+    margin-top: -35px;
+    width: 500px; 
 }
 
 
