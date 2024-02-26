@@ -153,6 +153,10 @@ p {
     margin-left: 80vw;
 }
 
+.scroll-button1{
+    margin-right: .7%;
+}
+
 .scroll-button1 img {
     transform: rotate(180deg);
 }
