@@ -186,20 +186,6 @@ p {
 }
 
 
-.story-button {
-    position: fixed;
-    bottom: -70px;
-    left: -70px;
-    cursor: pointer;
-    padding: 100px;
-}
-
-.story-button p {
-    color: antiquewhite;
-    stroke: none;
-    font-size: 30px;
-}
-
 
 
 
