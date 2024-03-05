@@ -1,0 +1,157 @@
+/* intro */
+
+
+
+body {
+    background: #1F1819;
+    overflow-x: hidden;
+    position: relative; /* Add this line to establish positioning context */
+}
+
+h1 {
+    color: antiquewhite;
+}
+
+p {
+    color: antiquewhite;
+    font-family: "pritzious", sans-serif;
+    font-size: 30px;
+    line-height: 1; 
+}
+
+.polaroid-1{
+margin-left: 119px;
+}
+
+.polaroid-1 img{
+width: 250px;
+}
+
+.polaroid-2{
+margin-right: 674.23px;
+}
+
+.polaroid-2 img{
+width: 250px; 
+transform: rotate(180deg);
+}
+
+.polaroid-3{
+margin-left: 70.88px;
+margin-top: -30px;
+}
+
+.polaroid-3 img{
+width: 250px;    
+transform: rotate(90deg);
+}
+
+.polaroid-4{
+margin-top: -500px;
+margin-left: 349px;
+}
+
+.polaroid-4 img{
+width: 250px;    
+
+}
+
+.polaroid-5{
+margin-left: 549.65px;
+margin-top: -300px;
+}
+
+.polaroid-5 img{
+width: 250px;    
+transform: rotate(90deg);
+}
+
+.polaroid-6{
+margin-left: 746.43px;
+margin-top: -300px;
+}
+
+.polaroid-6 img{
+width: 250px;    
+transform: rotate(180deg);
+}
+
+.polaroid-7{
+margin-left: 334.27px;
+margin-top: -300px;
+}
+
+.polaroid-7 img{
+width: 250px;   
+}
+
+.polaroid-8{
+margin-top: -200px;
+margin-left: 650px;
+}
+
+.polaroid-8 img{
+width: 250px;    
+}
+
+.polaroid-9{
+margin-right: 338.02px;
+}
+
+.polaroid-9 img{
+width: 250px;    
+transform: rotate(90deg);
+
+}
+
+.polaroid-10{
+margin-left: 906.85px;
+margin-top: -400px;
+}
+
+.polaroid-10 img{
+width: 250px;    
+transform: rotate(180deg);
+}
+
+.polaroid-11{
+margin-left: 1141px;
+}
+
+.polaroid-11 img{
+width: 250px;    
+transform: rotate(180deg);
+}
+
+.polaroid-12{
+margin-left: 1100.86px;
+}
+
+.polaroid-12 img{
+width: 250px;    
+transform: rotate(90deg);
+}
+
+:root {
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+  }
+
+  .mask {
+    position: absolute; /* Position the mask absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.9);
+    mask: radial-gradient(
+        circle at var(--mouse-x) var(--mouse-y),
+        transparent 40px,
+        black 150px
+    );
+    -webkit-mask: radial-gradient(
+        circle at var(--mouse-x) var(--mouse-y),
+        transparent 40px,
+        black 150px
+    );
+}
