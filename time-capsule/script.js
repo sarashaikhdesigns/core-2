@@ -12,3 +12,5 @@ document.addEventListener('DOMContentLoaded', () => {
         mask.style.setProperty('--mouse-y', y + '%');
     });
 });
+
+
