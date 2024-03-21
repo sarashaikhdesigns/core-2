@@ -1,0 +1,121 @@
+body {
+    background: #1F1819;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+#container {
+    position: relative;
+}
+
+.image {
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image.clicked {
+    transform: scale(1.5);
+}
+
+.polaroid-1 {
+    padding-left: 120px;
+    padding-bottom: 100px;
+}
+
+.polaroid-2 {
+    padding-left: 100px;
+    padding-top: 100px;
+}
+
+.polaroid-3 {
+    padding-left: 200px;
+    padding-top: 340px;
+}
+
+.polaroid-4 {
+    padding-left: 350px;
+    margin-top:-400px;
+    padding-bottom: 20px;
+}
+
+.polaroid-5 {
+    padding-left: 300px;
+    margin-top: 180px;
+}
+
+.polaroid-6 {
+    margin-left: 520px;
+    margin-top: -300px;
+}
+
+.polaroid-7 {
+    padding-left: 570px;
+    padding-top: 220px;
+}
+
+.polaroid-8 {
+    padding-top: 200px;
+    padding-left: 520px;
+}
+
+.polaroid-9 {
+    padding-left: 750px;
+    margin-top: -400px;
+}
+
+.polaroid-10 {
+    padding-left: 800px;
+    margin-top: 200px;
+}
+
+.polaroid-11 {
+    padding-left: 700px;
+    margin-top: 470px;
+}
+
+.polaroid-12 {
+    margin-top: -550px;
+    padding-left: 970px;
+}
+
+
+.polaroid-1 img, .polaroid-2 img, .polaroid-3 img,
+.polaroid-4 img, .polaroid-5 img, .polaroid-6 img,
+.polaroid-7 img, .polaroid-8 img, .polaroid-9 img,
+.polaroid-10 img, .polaroid-11 img, .polaroid-12 img
+{
+width: 250px;
+}
+
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 99;
+    background-color: rgba(0,0,0,0.9);
+    mix-blend-mode: multiply;
+}
+
+.spotlight {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 60%;
+    pointer-events: none;
+    z-index: 98;
+    mix-blend-mode: multiply;
+    transform: translate(-50%, -50%);
+}
+
+
+.selected {
+    background-color: #ffcc00; /* Change this to whatever color you want */
+}
