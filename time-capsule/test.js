@@ -30,14 +30,17 @@ window.addEventListener('DOMContentLoaded', () => {
                 document.body.style.backgroundImage = 'none'; // Reset background image when polaroid is clicked again to remove enlargement
             } else {
                 img.style.transform = 'scale(2)'; // Set scale to 1.5 of clicked image
-                // Get the parent polaroid div
-                const polaroidDiv = img.parentNode;
-                // Get the data-id of the polaroid div
-                const dataId = polaroidDiv.getAttribute('data-id');
                 // Set new background image based on the data-id
+                const polaroidDiv = img.parentNode;
+                const dataId = polaroidDiv.getAttribute('data-id');
                 document.body.style.backgroundImage = `url(images/${dataId}_background.jpg)`; // Change 'jpg' to your image format
                 // Change the image source
                 img.src = `images/${dataId}_new.png`; // Change 'png' to your image format
+                // Adjust body styles to cover the whole viewport
+                document.body.style.backgroundSize = 'cover';
+                document.body.style.backgroundPosition = 'center';
+                document.body.style.backgroundAttachment = 'fixed';
+                document.body.style.overflow = 'hidden';
             }
         });
 
@@ -57,6 +60,10 @@ window.addEventListener('DOMContentLoaded', () => {
             img.classList.remove('clicked'); // Remove 'clicked' class from all images
             // Reset background image when clicking outside of images
             document.body.style.backgroundImage = 'none';
+            document.body.style.backgroundSize = 'auto';
+            document.body.style.backgroundPosition = 'initial';
+            document.body.style.backgroundAttachment = 'initial';
+            document.body.style.overflow = 'auto';
             // Reset image source to original
             const polaroidDiv = img.parentNode;
             const dataId = polaroidDiv.getAttribute('data-id');
