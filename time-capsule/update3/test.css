@@ -126,14 +126,3 @@ width: 300px;
 }
 
 
-
-/* text reveal styling */
-.text-reveal {
-    display: none; /* Initially hide text */
-}
-
-.text-reveal.revealed {
-    display: block; /* Display text when revealed */
-}
-
-

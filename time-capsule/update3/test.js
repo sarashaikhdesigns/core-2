@@ -51,14 +51,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 img.src = `images/${dataId}.png`; // Change 'png' to your image format
             }
         });
-
-        // New event listener for revealing text
-        img.addEventListener('click', () => {
-            const textReveals = img.parentNode.querySelectorAll('.text-reveal');
-            textReveals.forEach(text => {
-                text.classList.toggle('revealed');
-            });
-        });
     });
 
     document.body.addEventListener('click', () => {
