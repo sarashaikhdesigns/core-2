@@ -25,13 +25,19 @@ window.addEventListener('DOMContentLoaded', () => {
                 }
             });
             img.classList.toggle('clicked'); // Toggle 'clicked' class for the clicked image
+
+            const polaroidDiv = img.parentNode;
+            const textReveals = polaroidDiv.querySelectorAll('.text-reveal');
+            textReveals.forEach((text) => {
+                text.classList.toggle('revealed'); // Toggle the 'revealed' class for the text reveal elements
+            });
+
             if (clicked) {
                 img.style.transform = 'scale(1)'; // Set scale to 1 when image is clicked again to remove enlargement
                 document.body.style.backgroundImage = 'none'; // Reset background image when polaroid is clicked again to remove enlargement
             } else {
                 img.style.transform = 'scale(2)'; // Set scale to 1.5 of clicked image
                 // Set new background image based on the data-id
-                const polaroidDiv = img.parentNode;
                 const dataId = polaroidDiv.getAttribute('data-id');
                 document.body.style.backgroundImage = `url(images/${dataId}_background.jpg)`; // Change 'jpg' to your image format
                 // Change the image source
@@ -51,14 +57,6 @@ window.addEventListener('DOMContentLoaded', () => {
                 img.src = `images/${dataId}.png`; // Change 'png' to your image format
             }
         });
-
-        // New event listener for revealing text
-        img.addEventListener('click', () => {
-            const textReveals = img.parentNode.querySelectorAll('.text-reveal');
-            textReveals.forEach(text => {
-                text.classList.toggle('revealed');
-            });
-        });
     });
 
     document.body.addEventListener('click', () => {
@@ -76,6 +74,12 @@ window.addEventListener('DOMContentLoaded', () => {
             const polaroidDiv = img.parentNode;
             const dataId = polaroidDiv.getAttribute('data-id');
             img.src = `images/${dataId}.png`; // Change 'png' to your image format
+
+            // Hide text reveal elements
+            const textReveals = polaroidDiv.querySelectorAll('.text-reveal');
+            textReveals.forEach((text) => {
+                text.classList.remove('revealed');
+            });
         });
     });
 });
