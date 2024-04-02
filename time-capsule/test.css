@@ -13,7 +13,7 @@ body {
 }
 
 .image {
-    position: absolute;
+    position: fixed;
     cursor: pointer;
     transition: transform 0.3s ease;
     width: 100px; 
@@ -29,34 +29,35 @@ body {
 /* polaroid positioning */
 
 .polaroid-1 {
+    position: absolute;
     padding-left: 120px;
     padding-bottom: 100px;
 }
 
 .polaroid-2 {
     padding-left: 100px;
-    padding-top: 150px;
+    padding-top: 250px;
 }
 
 .polaroid-3 {
     padding-left: 200px;
-    padding-top: 320px;
+    padding-top: 300px;
 }
 
 .polaroid-4 {
     padding-left: 370px;
-    margin-top:-440px;
+    margin-top:-480px;
     padding-bottom: 20px;
 }
 
 .polaroid-5 {
     padding-left: 350px;
-    margin-top: 220px;
+    margin-top: 200px;
 }
 
 .polaroid-6 {
     margin-left: 570px;
-    margin-top: -350px;
+    margin-top: -300px;
 }
 
 .polaroid-7 {
@@ -71,21 +72,23 @@ body {
 
 .polaroid-9 {
     padding-left: 820px;
-    margin-top: -580px;
+    margin-top: -560px;
 }
 
 .polaroid-10 {
+    position: absolute;
     padding-left: 900px;
-    margin-top: 250px;
+    margin-top: 270px;
 }
 
 .polaroid-11 {
+    position: absolute;
     padding-left: 900px;
-    margin-top: 550px;
+    margin-top: 570px;
 }
 
 .polaroid-12 {
-    margin-top: -770px;
+    margin-top: 370px;
     padding-left: 1100px;
 }
 

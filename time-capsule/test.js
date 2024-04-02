@@ -1,16 +1,21 @@
 window.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('.image');
+    let zIndexCounter = 1; // Initialize z-index counter
 
     images.forEach((img) => {
+        img.style.zIndex = zIndexCounter++; // Assign z-index to each image
         img.addEventListener('click', (event) => {
             event.stopPropagation();
             const clicked = img.classList.contains('clicked');
             images.forEach((otherImg) => {
                 if (otherImg !== img) {
-                    otherImg.style.opacity = clicked ? '1' : '0.0'; // Set opacity to 10% if clicked, else 100%
+                    otherImg.style.opacity = clicked ? '1' : '0.1'; // Set opacity to 10% if clicked, else 100%
                     otherImg.style.transform = clicked ? '' : 'scale(1)'; // Set scale to 1 if clicked, else 1.5
                 }
             });
+
+            // Increment z-index for the clicked image
+            img.style.zIndex = zIndexCounter++;
             img.classList.toggle('clicked'); // Toggle 'clicked' class for the clicked image
 
             const polaroidDiv = img.parentNode;
@@ -20,14 +25,11 @@ window.addEventListener('DOMContentLoaded', () => {
             });
 
             if (clicked) {
-                img.style.transform = 'scale(1)'; // Set scale to 1 when image is clicked again to remove enlargement
                 document.body.style.backgroundImage = 'none'; // Reset background image when polaroid is clicked again to remove enlargement
                 img.classList.remove('fade-transition'); // Remove the fade transition class
             } else {
-                img.style.transform = 'scale(2)'; // Set scale to 1.5 of clicked image
                 // Set new background image based on the data-id
                 const dataId = polaroidDiv.getAttribute('data-id');
-                document.body.style.backgroundImage = `url(images/${dataId}_background.jpg)`; // Change 'jpg' to your image format
                 // Change the image source
                 img.src = `images/${dataId}_new.png`; // Change 'png' to your image format
                 // Add fade transition class to the image
@@ -38,16 +40,15 @@ window.addEventListener('DOMContentLoaded', () => {
                 document.body.style.backgroundAttachment = 'fixed';
                 document.body.style.overflow = 'hidden';
             }
-            });
-            
-            img.addEventListener('mouseleave', () => {
-                if (!img.classList.contains('clicked')) {
-                    const polaroidDiv = img.parentNode;
-                    const dataId = polaroidDiv.getAttribute('data-id');
-                    img.src = `images/${dataId}.png`; // Change 'png' to your image format
-                }
-            });
-            
+        });
+
+        img.addEventListener('mouseleave', () => {
+            if (!img.classList.contains('clicked')) {
+                const polaroidDiv = img.parentNode;
+                const dataId = polaroidDiv.getAttribute('data-id');
+                img.src = `images/${dataId}.png`; // Change 'png' to your image format
+            }
+        });
     });
 
     document.body.addEventListener('click', () => {
@@ -73,4 +74,28 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    // Additional code for fading in images slowly and randomly
+    images.forEach((image) => {
+        // Initially set opacity to 0
+        image.style.opacity = '0';
+        // Set transition duration
+        image.style.transition = 'opacity 5s ease';
+    });
+
+    // Function to fade in images gradually after a delay
+    function fadeInImagesGradually() {
+        images.forEach(function(image) {
+            // Set a random delay between 0 and 3 seconds for each image
+            var delay = Math.random() * 3000;
+
+            // Fade in the image after the random delay
+            setTimeout(function() {
+                image.style.opacity = '1';
+            }, delay);
+        });
+    }
+
+    // Call the function to fade in images gradually after a delay
+    fadeInImagesGradually();
 });
