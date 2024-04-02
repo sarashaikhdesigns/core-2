@@ -71,24 +71,26 @@ body {
 }
 
 .polaroid-9 {
+    position: absolute;
     padding-left: 820px;
     margin-top: -560px;
 }
 
 .polaroid-10 {
     position: absolute;
+    padding-top: 10px;
     padding-left: 900px;
-    margin-top: 270px;
+    margin-top: -290px;
 }
 
 .polaroid-11 {
     position: absolute;
     padding-left: 900px;
-    margin-top: 570px;
+    margin-top: 40px;
 }
 
 .polaroid-12 {
-    margin-top: 370px;
+    margin-top: -270px;
     padding-left: 1100px;
 }
 
