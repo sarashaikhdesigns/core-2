@@ -25,7 +25,7 @@ function setClockFont(font) {
 }
 
 function redirectToWebsite() {
-  window.location.href = "file:///Users/sarashaikh/Desktop/art/Sara_CIF24/core-2/clock/test.html"; // Replace "https://example.com" with your desired website URL
+  window.location.href = "https://sarashaikhdesigns.github.io/core-2/clock/index.html";
 }
 
 function initClock() {
