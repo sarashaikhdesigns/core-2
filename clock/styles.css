@@ -1,0 +1,145 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: black;
+  animation: gradientAnimation 3s ease infinite alternate;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); background: linear-gradient(90deg, #0F0, #000); }
+  20% { transform: translate(-2px, -2px); background: linear-gradient(90deg, #0F0, #000); }
+  40% { transform: translate(2px, 2px); background: linear-gradient(90deg, #0F0, #000); }
+  60% { transform: translate(-2px, 2px); background: linear-gradient(90deg, #0F0, #000); }
+  80% { transform: translate(2px, -2px); background: linear-gradient(90deg, #0F0, #000); }
+  100% { transform: translate(0); background: linear-gradient(90deg, #0F0, #000); }
+}
+
+  
+  .motherboard {
+    width: 800px;
+    height: 500px;
+    background: linear-gradient(135deg, #333 0%, #222 100%);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 255, 0, 0.3);
+  }
+  
+  /* .cpu, .ram {
+    width: 40%;
+    height: 80%;
+    background: linear-gradient(135deg, #999 0%, #777 100%);
+    position: absolute;
+    overflow: hidden;
+  }
+   */
+  .cpu {
+    top: 10%;
+    left: 5%;
+  }
+  
+  .ram {
+    top: 10%;
+    right: 5%;
+  }
+  
+  .cpu-core {
+    width: 40%;
+    height: 40%;
+    background: radial-gradient(circle, #000 0%, #222 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+  
+  .cpu-light {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 255, 0, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  .wire {
+    width: 2px;
+    height: 100%;
+    background-color: #0F0;
+    position: absolute;
+    animation: moveWire 5s ease-in-out infinite alternate;
+  }
+  
+  .horizontal {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .vertical {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .diagonal-1 {
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+  }
+  
+  .diagonal-2 {
+    top: 0;
+    right: 0;
+    transform: rotate(-45deg);
+  }
+  
+  .clock {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: monospace;
+    font-size: 40px;
+    color: #0F0;
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 50px rgba(0, 255, 0, 0.8);
+    }
+  }
+  
+  @keyframes moveWire {
+    0% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+
+  .text p {
+    font-family: monospace;
+    color: #0F0;
+  }
