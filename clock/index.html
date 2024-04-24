@@ -7,7 +7,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <audio id="computerSound">
+    <source src="machine-whir-69490.mp3" type="audio/mp3">
+  </audio>
 
+  <audio id="clickSound">
+    <source src="spacebar-click-keyboard-199448.mp3" type="audio/mp3">
+  </audio>
     <div class="text1">
       <p>
         window.onload = function() { const text = ".clock { position: relative; width: 200px; height: 200px; border: 10px solid #333; border-radius: 50%; } .hour-hand, .minute-hand, .second-hand { position: absolute; width: 50%; height: 2px; background-color: black; transform-origin: 100%; transition: transform 0.5s ease-in-out; } .hour-hand { top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(90deg); } .minute-hand { top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(90deg); } .second-hand { top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(90deg); } .center-circle { position: absolute; width: 12px; height: 12px; background-color: #333; border-radius: 50%; top: 50%; left: 50%; transform: translate(-50%, -50%); }"; const typingSpeed = 1000; // Speed of typing in milliseconds (1 second) const element = document.querySelector('.typewriter-text'); let i = 0; const typeWriter = () => { if (i text.length) { element.innerHTML += text.charAt(i); i++; setTimeout(typeWriter, typingSpeed); } } typeWriter(); function updateClock() { const now = new Date(); const hours = String(now.getHours()).padStart(2, '0'); const minutes = String(now.getMinutes()).padStart(2, '0'); const seconds = String(now.getSeconds()).padStart(2, '0'); const timeString = `${hours}:${minutes}:${seconds}`; document.getElementById('clock').textContent = timeString; } // Update the clock every second setInterval(updateClock, 1000); // Initial call to display the clock immediately updateClock(); };
