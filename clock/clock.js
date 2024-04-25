@@ -36,3 +36,15 @@ function initClock() {
 setClockColor('#0F0');
 setClockFont('monospace');
 initClock();
+
+
+function playComputerSound() {
+  var audio = document.getElementById("computerSound");
+  audio.volume = 0.3; // Set the volume to 30% of its maximum (0.3 out of 1)
+  audio.play();
+  // Add event listener to repeat the computer sound when it ends
+  audio.addEventListener('ended', function() {
+    this.currentTime = 0; // Reset audio to the beginning
+    this.play();
+  });
+}
