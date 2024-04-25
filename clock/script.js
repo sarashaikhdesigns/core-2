@@ -48,8 +48,16 @@ function blinkLetters(element) {
   }, 1000); // Move to next letter every second
 }
 
-function playClickSound() {
+ // Function to play the clicking sound
+ function playClickSound() {
   var audio = document.getElementById("clickSound");
+  audio.currentTime = 0; // Reset audio to the beginning
+  audio.play();
+}
+
+ // Function to play the clicking sound
+ function playBeepSound() {
+  var audio = document.getElementById("beepSound");
   audio.currentTime = 0; // Reset audio to the beginning
   audio.play();
 }
@@ -68,14 +76,21 @@ function playComputerSound() {
 // Call the functions to start playing the sounds simultaneously
 playClickSound();
 playComputerSound();
+playBeepSound();
+
 
 // Set interval to repeat the clicking sound every second
 setInterval(playClickSound, 1000);
+setInterval(playBeepSound, 60000);
+
 
 // Rest of your JavaScript code
 window.onload = function() {
   // Your code here
 };
+
+
+
 
 // Call vibrateText immediately after the page loads
 vibrateText();
