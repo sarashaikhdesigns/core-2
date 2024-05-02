@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index1 < text1.length) {
       document.getElementById('typewriter').textContent += text1.charAt(index1);
       index1++;
-      setTimeout(typeWriter1, 1000); // Adjust the delay here (in milliseconds)
+      setTimeout(typeWriter1, 10); 
     } else {
       typeWriter2();
     }
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index2 < text2.length) {
       document.getElementById('typewriter2').textContent += text2.charAt(index2);
       index2++;
-      setTimeout(typeWriter2, 1000); // Adjust the delay here (in milliseconds)
+      setTimeout(typeWriter2, 10); 
     } else {
       typeWriter3();
     }
@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index3 < text3.length) {
       document.getElementById('typewriter3').textContent += text3.charAt(index3);
       index3++;
-      setTimeout(typeWriter3, 1000); // Adjust the delay here (in milliseconds)
+      setTimeout(typeWriter3, 10); 
     }
   }
 
@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index4 < text4.length) {
       document.getElementById('typewriter4').textContent += text4.charAt(index4);
       index4++;
-      setTimeout(typeWriter4, 1000); // Adjust the delay here (in milliseconds)
+      setTimeout(typeWriter4, 10); 
     }
   }
 
@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index5 < text5.length) {
        document.getElementById('typewriter5').textContent += text5.charAt(index4);
        index5++;
-       setTimeout(typeWriter5, 1000); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter5, 1000); 
      }
    }
 
@@ -73,7 +73,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index6 < text6.length) {
        document.getElementById('typewriter6').textContent += text6.charAt(index6);
        index6++;
-       setTimeout(typeWriter6, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter6, 10); 
      }
    }
 
@@ -98,7 +98,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index8 < text8.length) {
        document.getElementById('typewriter8').textContent += text8.charAt(index8);
        index8++;
-       setTimeout(typeWriter8, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter8, 10); 
      }
    }
 
@@ -110,7 +110,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index9 < text9.length) {
        document.getElementById('typewriter9').textContent += text9.charAt(index4);
        index9++;
-       setTimeout(typeWriter9, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter9, 10); 
      }
    }
 
@@ -122,7 +122,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text10.length) {
        document.getElementById('typewriter10').textContent += text10.charAt(index10);
        index10++;
-       setTimeout(typeWriter10, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter10, 10); 
      }
    }
 
@@ -134,7 +134,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text11.length) {
        document.getElementById('typewriter11').textContent += text11.charAt(index11);
        index11++;
-       setTimeout(typeWriter11, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter11, 10); 
      }
    }
 
@@ -147,7 +147,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text12.length) {
        document.getElementById('typewriter12').textContent += text12.charAt(index12);
        index12++;
-       setTimeout(typeWriter12, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter12, 10); 
      }
    }
   
@@ -159,7 +159,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text13.length) {
        document.getElementById('typewriter13').textContent += text13.charAt(index13);
        index13++;
-       setTimeout(typeWriter13, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter13, 10); 
      }
    }
 
@@ -172,7 +172,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text14.length) {
        document.getElementById('typewriter14').textContent += text14.charAt(index14);
        index14++;
-       setTimeout(typeWriter14, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter14, 10); 
      }
    }
 
@@ -184,7 +184,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text15.length) {
        document.getElementById('typewriter15').textContent += text15.charAt(index15);
        index15++;
-       setTimeout(typeWriter15, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter15, 10); 
      }
    }
    const text16 = document.getElementById('typewriter16').textContent;
@@ -195,8 +195,8 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text16.length) {
        document.getElementById('typewriter16').textContent += text16.charAt(index16);
        index16++;
-       setTimeout(typeWriter16, 10); // Adjust the delay here (in milliseconds)
-     }
+       setTimeout(typeWriter16, 10); 
+      }
    }
 
 
@@ -208,7 +208,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text14.length) {
        document.getElementById('typewriter17').textContent += text14.charAt(index17);
        index17++;
-       setTimeout(typeWriter17, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter17, 10); 
      }
    }
 
@@ -220,7 +220,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text18.length) {
        document.getElementById('typewriter18').textContent += text18.charAt(index18);
        index18++;
-       setTimeout(typeWriter18, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter18, 10); 
      }
    }
 
@@ -232,7 +232,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text19.length) {
        document.getElementById('typewriter19').textContent += text19.charAt(index19);
        index19++;
-       setTimeout(typeWriter19, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter19, 10); 
      }
    }
 
@@ -244,11 +244,57 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text20.length) {
        document.getElementById('typewriter20').textContent += text20.charAt(index20);
        index20++;
-       setTimeout(typeWriter20, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter20, 10); 
+     }
+   }
+   const text21 = document.getElementById('typewriter21').textContent;
+   document.getElementById('typewriter21').textContent = '';
+   let index21 = 0;
+
+   function typeWriter20() {
+     if (index10 < text20.length) {
+       document.getElementById('typewriter21').textContent += text21.charAt(index21);
+       index21++;
+       setTimeout(typeWriter21, 10); 
      }
    }
 
+   const text22 = document.getElementById('typewriter20').textContent;
+   document.getElementById('typewriter22').textContent = '';
+   let index22 = 0;
 
+   function typeWriter22() {
+     if (index10 < text22.length) {
+       document.getElementById('typewriter22').textContent += text22.charAt(index22);
+       index22++;
+       setTimeout(typeWriter22, 10); 
+   }
+
+   const text23 = document.getElementById('typewriter23').textContent;
+   document.getElementById('typewriter23').textContent = '';
+   let index23 = 0;
+
+   function typeWriter23() {
+     if (index10 < text23.length) {
+       document.getElementById('typewriter23').textContent += text23.charAt(index23);
+       index23++;
+       setTimeout(typeWriter23, 10); 
+     }
+   }
+
+   const text24 = document.getElementById('typewriter24').textContent;
+   document.getElementById('typewriter24').textContent = '';
+   let index24 = 0;
+
+   function typeWriter24() {
+     if (index10 < text24.length) {
+       document.getElementById('typewriter24').textContent += text24.charAt(index24);
+       index24++;
+       setTimeout(typeWriter24, 10); 
+     }
+   }
+
+   
 });
   
 
@@ -261,37 +307,32 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 
-// Function to play the clicking sound
 function playClickSound() {
   var audio = document.getElementById("clickSound");
-  audio.currentTime = 0; // Reset audio to the beginning
+  audio.currentTime = 0; 
   audio.play();
 }
 
-// Function to play the clicking sound
 function playBeepSound() {
   var audio = document.getElementById("beepSound");
-  audio.currentTime = 0; // Reset audio to the beginning
+  audio.currentTime = 0; 
   audio.play();
 }
 
 function playComputerSound() {
   var audio = document.getElementById("computerSound");
-  audio.volume = 0.3; // Set the volume to 30% of its maximum (0.3 out of 1)
+  audio.volume = 0.3; 
   audio.play();
-  // Add event listener to repeat the computer sound when it ends
   audio.addEventListener('ended', function() {
-    this.currentTime = 0; // Reset audio to the beginning
+    this.currentTime = 0;
     this.play();
   });
 }
 
-// Call the functions to start playing the sounds simultaneously
 playClickSound();
 playComputerSound();
 playBeepSound();
 
 
-// Set interval to repeat the clicking sound every second
 setInterval(playClickSound, 1000);
 setInterval(playBeepSound, 60000);

@@ -9,24 +9,122 @@ body {
 
 p {
   font-family: monospace;
+  font-size: 10px;
   color: #0F0;
 }
 
 
-.gray-box {
-  background-color: #525252; 
-  width: 900px; 
-  height: 500px; 
-  padding: 20px; 
-  position: absolute;
-  z-index: -10;
-}
-
 .text1{
-  width: 30%;
+width: 600px;
+hyphens: auto;
 }
 
 .text2{
-  margin-top: -400px;
-  width: 70%;
+width: 600px;
+hyphens: auto;
+}
+
+.text3{
+width: 600px;
+hyphens: auto;
+}
+
+.text4{
+width: 600px;
+hyphens: auto;
+}
+
+.text5{
+width: 600px;
+hyphens: auto;
+}
+
+.text6{
+width: 600px;
+hyphens: auto;
+}
+
+.text7{
+width: 600px;
+hyphens: auto;
+}
+
+.text8{
+width: 600px;
+hyphens: auto;
+}
+
+.text9{
+width: 600px;
+hyphens: auto;
+}
+
+.text10{
+width: 600px;
+hyphens: auto;
+}
+
+.text11{
+width: 600px;
+hyphens: auto;
+}
+
+.text12{
+width: 600px;
+hyphens: auto;
+}
+
+.text13{
+width: 600px;
+hyphens: auto;
+}
+
+.text14{
+width: 600px;
+hyphens: auto;
+}
+
+.text15{
+width: 600px;
+hyphens: auto;
+}
+
+.text16{
+width: 600px;
+}
+
+.text17{
+width: 600px;
+}
+
+.text18{
+width: 600px;
+}
+
+.text19{
+width: 600px;
+}
+
+.text20{
+width: 600px;
+}
+
+.text21{
+width: 600px;
+}
+
+.text22{
+width: 600px;
+}
+
+.text23{
+width: 600px;
+}
+
+.text24{
+width: 600px;
+}
+
+.hidden {
+  display: none;
 }

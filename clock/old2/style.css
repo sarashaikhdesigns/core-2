@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000;
+}
+
+p {
+  font-family: monospace;
+  color: #0F0;
+}
+
+
+.gray-box {
+  background-color: #525252; 
+  width: 900px; 
+  height: 500px; 
+  padding: 20px; 
+  position: absolute;
+  z-index: -10;
+}
+
+.text1{
+  width: 30%;
+}
+
+.text2{
+  margin-top: -400px;
+  width: 70%;
+}
