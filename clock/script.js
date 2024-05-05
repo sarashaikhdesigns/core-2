@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index3 < text3.length) {
       document.getElementById('typewriter3').textContent += text3.charAt(index3);
       index3++;
-      setTimeout(typeWriter3, 1000); // Adjust the delay here (in milliseconds)
+      setTimeout(typeWriter3, 1000); 
     }
   }
 
@@ -49,7 +49,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index4 < text4.length) {
       document.getElementById('typewriter4').textContent += text4.charAt(index4);
       index4++;
-      setTimeout(typeWriter4, 1000); // Adjust the delay here (in milliseconds)
+      setTimeout(typeWriter4, 1000); 
     }
   }
 
@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index5 < text5.length) {
        document.getElementById('typewriter5').textContent += text5.charAt(index4);
        index5++;
-       setTimeout(typeWriter5, 1000); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter5, 1000); 
      }
    }
 
@@ -73,7 +73,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index6 < text6.length) {
        document.getElementById('typewriter6').textContent += text6.charAt(index6);
        index6++;
-       setTimeout(typeWriter6, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter6, 10); 
      }
    }
 
@@ -86,7 +86,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index6 < text7.length) {
        document.getElementById('typewriter7').textContent += text7.charAt(index7);
        index6++;
-       setTimeout(typeWriter7, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter7, 10); 
      }
    }
 
@@ -98,7 +98,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index8 < text8.length) {
        document.getElementById('typewriter8').textContent += text8.charAt(index8);
        index8++;
-       setTimeout(typeWriter8, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter8, 10); 
      }
    }
 
@@ -110,7 +110,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index9 < text9.length) {
        document.getElementById('typewriter9').textContent += text9.charAt(index4);
        index9++;
-       setTimeout(typeWriter9, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter9, 10);
      }
    }
 
@@ -122,7 +122,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text10.length) {
        document.getElementById('typewriter10').textContent += text10.charAt(index10);
        index10++;
-       setTimeout(typeWriter10, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter10, 10); 
      }
    }
 
@@ -134,7 +134,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text11.length) {
        document.getElementById('typewriter11').textContent += text11.charAt(index11);
        index11++;
-       setTimeout(typeWriter11, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter11, 10); 
      }
    }
 
@@ -147,7 +147,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text12.length) {
        document.getElementById('typewriter12').textContent += text12.charAt(index12);
        index12++;
-       setTimeout(typeWriter12, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter12, 10); 
      }
    }
   
@@ -159,7 +159,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text13.length) {
        document.getElementById('typewriter13').textContent += text13.charAt(index13);
        index13++;
-       setTimeout(typeWriter13, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter13, 10);
      }
    }
 
@@ -172,7 +172,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text14.length) {
        document.getElementById('typewriter14').textContent += text14.charAt(index14);
        index14++;
-       setTimeout(typeWriter14, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter14, 10); 
      }
    }
 
@@ -184,7 +184,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text15.length) {
        document.getElementById('typewriter15').textContent += text15.charAt(index15);
        index15++;
-       setTimeout(typeWriter15, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter15, 10); 
      }
    }
    const text16 = document.getElementById('typewriter16').textContent;
@@ -195,7 +195,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text16.length) {
        document.getElementById('typewriter16').textContent += text16.charAt(index16);
        index16++;
-       setTimeout(typeWriter16, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter16, 10); 
      }
    }
 
@@ -208,7 +208,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text14.length) {
        document.getElementById('typewriter17').textContent += text14.charAt(index17);
        index17++;
-       setTimeout(typeWriter17, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter17, 10); 
      }
    }
 
@@ -220,7 +220,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text18.length) {
        document.getElementById('typewriter18').textContent += text18.charAt(index18);
        index18++;
-       setTimeout(typeWriter18, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter18, 10); 
      }
    }
 
@@ -232,7 +232,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text19.length) {
        document.getElementById('typewriter19').textContent += text19.charAt(index19);
        index19++;
-       setTimeout(typeWriter19, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter19, 10); 
      }
    }
 
@@ -244,7 +244,7 @@ window.addEventListener('DOMContentLoaded', function() {
      if (index10 < text20.length) {
        document.getElementById('typewriter20').textContent += text20.charAt(index20);
        index20++;
-       setTimeout(typeWriter20, 10); // Adjust the delay here (in milliseconds)
+       setTimeout(typeWriter20, 10); 
      }
    }
 
