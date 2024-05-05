@@ -1,0 +1,101 @@
+window.addEventListener('DOMContentLoaded', function() {
+  // typewriter 1
+  const text1 = document.getElementById('typewriter').textContent;
+  document.getElementById('typewriter').textContent = '';
+  let index1 = 0;
+
+  function typeWriter() {
+    if (index1 < text1.length) {
+      document.getElementById('typewriter').textContent += text1.charAt(index1);
+      index1++;
+      setTimeout(typeWriter, 1000); 
+    } else {
+      typeWriter2();   // once typewriter is finished typing out, the next one begins
+    }
+  }
+  typeWriter();
+  typeWriter();
+
+  
+
+// function to play the clicking sound (every second)
+function playClickSound() {
+  var audio = document.getElementById("clickSound");
+  audio.currentTime = 0; 
+  audio.play();
+}
+
+// function to play the beeping sound (every minute)
+function playBeepSound() {
+  var audio = document.getElementById("beepSound");
+  audio.currentTime = 0; 
+  audio.play();
+}
+
+// function to play computer whir continuously)
+function playComputerSound() {
+  var audio = document.getElementById("computerSound");
+  audio.volume = 0.3; // make the audio quieter
+  audio.play();
+  audio.addEventListener('ended', function() {
+    this.currentTime = 0;
+    this.play();
+  });
+}
+
+// playing the sounds simultaneously
+playClickSound();
+playComputerSound();
+playBeepSound();
+
+
+// repeat the clicking sound every second
+setInterval(playClickSound, 1000);
+setInterval(playBeepSound, 60000);
+
+
+
+// Trigger the shaking animation every 10 seconds
+setInterval(function() {
+  document.querySelector('.clock').classList.add('shake');
+
+  // Remove the shake class after the animation completes
+  setTimeout(function() {
+      document.querySelector('.clock').classList.remove('shake');
+  }, 100); // Adjust this time to match the animation duration
+}, 60000); // 10 seconds in milliseconds
+
+body {
+  display: flex;
+  margin: 0;
+  background-color: #000;
+}
+
+p {
+  color: #0F0;
+  font-size: 12px; 
+  font-family: monospace; 
+  text-align: justify;
+  word-break: break-all; /* so the text does not hyphenate */
+  padding: 5px;
+  text-shadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowing effect to the text */
+}
+
+
+.hidden {
+  display: none;
+}
+
+/* shaking animation transformation*/
+@keyframes shake {
+  0% { transform: translate(0, 0); }
+  10%, 20% { transform: translate(-5px, 0); }
+  30%, 50%, 70%, 90% { transform: translate(5px, 0); }
+  40%, 60%, 80% { transform: translate(-5px, 0); }
+  100% { transform: translate(0, 0); }
+}
+
+/*  shaking animation happens to all of the text every minute  */
+.clock.shake {
+  animation: shake 0.5s ease-in-out;
+}

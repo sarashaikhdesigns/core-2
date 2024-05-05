@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  margin: 0;
+  background-color: #000;
+}
+
+p {
+  color: #0F0;
+  font-size: 12px; 
+  width: 29vw;
+  font-family: monospace; 
+  text-align: justify;
+  word-break: break-all; 
+  padding: 5px;
+}
+
+
+.hidden {
+  display: none;
+}
