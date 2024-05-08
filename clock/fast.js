@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index1 < text1.length) {
       document.getElementById('typewriter').textContent += text1.charAt(index1);
       index1++;
-      setTimeout(typeWriter, 1000); 
+      setTimeout(typeWriter, 1); 
     } else {
       typeWriter2();   // once typewriter is finished typing out, the next one begins
     }
@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index2 < text2.length) {
       document.getElementById('typewriter2').textContent += text2.charAt(index2);
       index2++;
-      setTimeout(typeWriter2, 1000); 
+      setTimeout(typeWriter2, 1); 
     } else {
       typeWriter3();
     }
@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index3 < text3.length) {
       document.getElementById('typewriter3').textContent += text3.charAt(index3);
       index3++;
-      setTimeout(typeWriter3, 1000); 
+      setTimeout(typeWriter3, 1); 
     } else {
       typeWriter4();
     }
@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index4 < text4.length) {
       document.getElementById('typewriter4').textContent += text4.charAt(index4);
       index4++;
-      setTimeout(typeWriter4, 1000); 
+      setTimeout(typeWriter4, 1); 
     } else {
       typeWriter5();
     }
@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index5 < text5.length) {
       document.getElementById('typewriter5').textContent += text5.charAt(index5);
       index5++;
-      setTimeout(typeWriter5, 1000); 
+      setTimeout(typeWriter5, 1); 
     } else {
       typeWriter6();
     }
@@ -81,7 +81,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index6 < text6.length) {
       document.getElementById('typewriter6').textContent += text6.charAt(index6);
       index6++;
-      setTimeout(typeWriter6, 1000); 
+      setTimeout(typeWriter6, 1); 
     } else {
       typeWriter7();
     }
@@ -96,7 +96,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index7 < text7.length) {
       document.getElementById('typewriter7').textContent += text7.charAt(index7);
       index7++;
-      setTimeout(typeWriter7, 1000); 
+      setTimeout(typeWriter7, 1); 
     } else {
       typeWriter8();
     }
@@ -110,7 +110,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index8 < text8.length) {
       document.getElementById('typewriter8').textContent += text8.charAt(index8);
       index8++;
-      setTimeout(typeWriter8, 1000); 
+      setTimeout(typeWriter8, 1); 
     } else {
       typeWriter9();
     }
@@ -124,7 +124,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index9 < text9.length) {
       document.getElementById('typewriter9').textContent += text9.charAt(index9);
       index9++;
-      setTimeout(typeWriter9, 1000); 
+      setTimeout(typeWriter9, 1); 
     } else {
       typeWriter10();
     }
@@ -138,7 +138,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index10 < text10.length) {
       document.getElementById('typewriter10').textContent += text10.charAt(index10);
       index10++;
-      setTimeout(typeWriter10, 1000); 
+      setTimeout(typeWriter10, 1); 
     } else {
       typeWriter11();
     }
@@ -152,7 +152,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index11 < text11.length) {
       document.getElementById('typewriter11').textContent += text11.charAt(index11);
       index11++;
-      setTimeout(typeWriter11, 1000); 
+      setTimeout(typeWriter11, 1); 
     } else {
       typeWriter12();
     }
@@ -167,7 +167,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index12 < text12.length) {
       document.getElementById('typewriter12').textContent += text12.charAt(index12);
       index12++;
-      setTimeout(typeWriter12, 1000); 
+      setTimeout(typeWriter12, 1); 
     } else {
       typeWriter13();
     }
@@ -181,7 +181,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index13 < text13.length) {
       document.getElementById('typewriter13').textContent += text13.charAt(index13);
       index13++;
-      setTimeout(typeWriter13, 1000); 
+      setTimeout(typeWriter13, 1); 
     } else {
       typeWriter14();
     }
@@ -196,7 +196,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index14 < text14.length) {
       document.getElementById('typewriter14').textContent += text14.charAt(index14);
       index14++;
-      setTimeout(typeWriter14, 1000); 
+      setTimeout(typeWriter14, 1); 
     } else {
       typeWriter15();
     }
@@ -210,7 +210,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index15 < text15.length) {
       document.getElementById('typewriter15').textContent += text15.charAt(index15);
       index15++;
-      setTimeout(typeWriter15, 1000); 
+      setTimeout(typeWriter15, 1); 
     } else {
       typeWriter16();
     }
@@ -224,7 +224,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index16 < text16.length) {
       document.getElementById('typewriter16').textContent += text16.charAt(index16);
       index16++;
-      setTimeout(typeWriter16, 1000); 
+      setTimeout(typeWriter16, 1); 
     } else {
       typeWriter17();
     }
@@ -239,7 +239,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index17 < text17.length) {
       document.getElementById('typewriter17').textContent += text17.charAt(index17);
       index17++;
-      setTimeout(typeWriter17, 1000); 
+      setTimeout(typeWriter17, 1); 
     } else {
       typeWriter18();
     }
@@ -254,7 +254,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index18 < text18.length) {
       document.getElementById('typewriter18').textContent += text18.charAt(index18);
       index18++;
-      setTimeout(typeWriter18, 1000); 
+      setTimeout(typeWriter18, 1); 
     } else {
       typeWriter19();
     }
@@ -268,7 +268,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index19 < text19.length) {
       document.getElementById('typewriter19').textContent += text19.charAt(index19);
       index19++;
-      setTimeout(typeWriter19, 1000); 
+      setTimeout(typeWriter19, 1); 
     } else {
       typeWriter20();
     }
@@ -283,7 +283,7 @@ window.addEventListener('DOMContentLoaded', function() {
     if (index20 < text20.length) {
       document.getElementById('typewriter20').textContent += text20.charAt(index20);
       index20++;
-      setTimeout(typeWriter20, 1000); 
+      setTimeout(typeWriter20, 1); 
     } else {
       typeWriter21();
     }
@@ -297,7 +297,7 @@ window.addEventListener('DOMContentLoaded', function() {
       if (index21 < text21.length) {
         document.getElementById('typewriter21').textContent += text21.charAt(index21);
         index21++;
-        setTimeout(typeWriter21, 1000); 
+        setTimeout(typeWriter21, 1); 
       } else {
         typeWriter22();
       }
@@ -311,7 +311,7 @@ window.addEventListener('DOMContentLoaded', function() {
       if (index22 < text22.length) {
         document.getElementById('typewriter22').textContent += text22.charAt(index22);
         index22++;
-        setTimeout(typeWriter22, 1000); 
+        setTimeout(typeWriter22, 1); 
       } else {
         typeWriter23();
       }
@@ -325,7 +325,7 @@ window.addEventListener('DOMContentLoaded', function() {
       if (index23 < text23.length) {
         document.getElementById('typewriter23').textContent += text23.charAt(index23);
         index23++;
-        setTimeout(typeWriter23, 1000); 
+        setTimeout(typeWriter23, 1); 
       } else {
         typeWriter24();
       }
@@ -339,7 +339,7 @@ window.addEventListener('DOMContentLoaded', function() {
       if (index24 < text24.length) {
         document.getElementById('typewriter24').textContent += text24.charAt(index24);
         index24++;
-        setTimeout(typeWriter24, 1000); 
+        setTimeout(typeWriter24, 1); 
       } else {
         // clear the text and display a message after a delay
         document.body.innerHTML = ''; // clears HTML 

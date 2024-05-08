@@ -18,122 +18,1566 @@
     <source src="sec.mp3" type="audio/mp3">
   </audio>
   <section class="clock">
+  <pre>
   <div class ="text1">
-    <p id="typewriter">window.addEventListener('DOMContentLoaded', function() { conwindow.addEventListener('DOMContentLoaded', function() { const text = document.getElementById('typewriter').textContent; document.getElementById('typewriter').textContent = ''; let index = 0; function typeWriter() { if (index < text.length) { document.getElementById('typewriter').textContent += text.charAt(index); index++; setTimeout(typeWriter, 1000); // Adjust the delay here (in milliseconds) } } typeWriter(); }); // Function to play the clicking sound function playClickSound() { var audio = document.getElementById("clickSound"); audio.currentTime = 0; // Reset audio to the beginning audio.play(); } // Function to play the clicking sound function playBeepSound() { var audio = document.getElementById("beepSound"); audio.currentTime = 0; // Reset audio to the beginning audio.play(); } function playComputerSound() { var audio = document.getElementById("computerSound"); audio.volume = 0.3; // Set the volume to 30% of its maximum (0.3 out of 1) audio.play(); // Add event listener to repeat the computer sound when it ends audio.addEventListener('ended', function() { this.currentTime = 0; // Reset audio to the beginning this.play(); }); } // Call the functions to start playing the sounds simultaneously playClickSound(); playComputerSound(); playBeepSound(); // Set interval to repeat the clicking sound every second setInterval(playClickSound, 1000); setInterval(playBeepSound, 60000); // Rest of your JavaScript code window.onload = function() { // Your code here }; window.addEventListener('DOMContentLoaded', function() { const text = document.getElementById('typewriter').textContent; document.getElementById('typewriter').textContent = ''; let index = 0; function typeWriter() { if (index < text.length) { document.getElementById('typewriter').textContent += text.charAt(index); index++; setTimeout(typeWriter, 1000); // Adjust the delay here (in milliseconds) } } typeWriter(); }); // Function to play the clicking sound function playClickSound() { var audio = document.getElementById("clickSound"); audio.currentTime = 0; // Reset audio to the beginning audio.play(); } // Function to play the clicking sound function playBeepSound() { var audio = document.getElementById("beepSound"); audio.currentTime = 0; // Reset audio to the beginning audio.play(); } function playComputerSound() { var audio = document.getElementById("computerSound"); audio.volume = 0.3; // Set the volume to 30% of its maximum (0.3 out of 1) audio.play(); // Add event listener to repeat the computer sound when it ends audio.addEventListener('ended', function() { this.currentTime = 0; // Reset audio to the beginning this.play(); }); } // Call the functions to start playing the sounds simultaneously playClickSound(); playComputerSound(); playBeepSound(); // Set interval to repeat the clicking sound every second setInterval(playClickSound, 1000); setInterval(playBeepSound, 60000); // Rest of your JavaScript code window.onload = function() { // Your code here };window.addEventListener('DOMContentLoaded', function() { const text = document.getElementById('typewriter').textContent; document.getElementById('typewriter').textContent = ''; let index = 0; function typeWriter() { if (index < text.length) { document.getElementById('typewriter').textContent += text.charAt(index); index++; setTimeout(typeWriter, 1000); // Adjust the delay here (in milliseconds) } } typeWriter(); }); // Function to play the clicking sound function playClickSound() { var audio = document.getElementById("clickSound"); audio.currentTime = 0; // Reset audio
-    </p>
+    <p id="typewriter">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
+  </pre>
+  <pre>
   <div class ="text2">
-    <p id="typewriter2">ejowfjidwojjjiojiodejiojiowejoidjioweejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+    <p id="typewriter2">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
+  </pre>
+  <pre>
   <div class ="text3">
-    <p id="typewriter3">ejowfjidwojjjiojiodejiojiowejoidjioweejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+    <p id="typewriter3">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
+  </pre>
+  <pre>
   <div class ="text4">
-    <p id="typewriter4">ejowfjidwojjjiojiodejiojiowejoidjioweejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+    <p id="typewriter4">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
-<div class ="text5">
-  <p id="typewriter5">ejowfjidwojjjiojiodejiojiowejoidjioweejowfjidwojjjiojiodejiojiowejoidjiowe
-  </p>
+  </pre>
+  <pre>
+  <div class ="text5">
+    <p id="typewriter5">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
-<div class ="text6">
-  <p id="typewriter6">ejowfjidwojjjiojiodejiojiowejoidjiowe
-  </p>
+  </pre>
+  <pre>
+  <div class ="text6">
+    <p id="typewriter6">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
+  </pre>
+  <pre>
   <div class ="text7">
-    <p id="typewriter7">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+    <p id="typewriter7">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
+  </pre>
+  <pre>
   <div class ="text8">
-    <p id="typewriter8">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+    <p id="typewriter8">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
+  </pre>
+  <pre>
   <div class ="text9">
-    <p id="typewriter9">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+    <p id="typewriter9">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-  <div class ="text10">
-    <p id="typewriter10">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+  </pre>
+  <pre>
+    <div class ="text10">
+    <p id="typewriter10">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
+  </pre>
+  <pre>
   <div class ="text11">
-    <p id="typewriter11">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+    <p id="typewriter11">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
+  </pre>
+  <pre>
   <div class ="text12">
-    <p id="typewriter12">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+    <p id="typewriter12">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
-
+  </pre>
+  <pre>
   <div class ="text13">
-    <p id="typewriter13">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+    <p id="typewriter13">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
+  </pre>
+  <pre>
   <div class ="text14">
-    <p id="typewriter14">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+    <p id="typewriter14">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
+  </pre>
+  <pre>
   <div class ="text15">
-    <p id="typewriter15">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+    <p id="typewriter15">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
+  </pre>
+  <pre>
   <div class ="text16">
-    <p id="typewriter16">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+    <p id="typewriter16">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
+  </pre>
+  <pre>
   <div class ="text17">
-    <p id="typewriter17">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+    <p id="typewriter17">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
+  </pre>
+  <pre>
   <div class ="text18">
-    <p id="typewriter18">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+    <p id="typewriter18">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
+  </pre>
+  <pre>
   <div class ="text19">
-    <p id="typewriter19">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+    <p id="typewriter19">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
-  <div class ="text20">
-    <p id="typewriter20">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+  </pre>
+  <pre>
+    <div class ="text20">
+    <p id="typewriter20">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
-  <div class ="text21">
-    <p id="typewriter21">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+  </pre>
+    <pre>
+    <div class ="text21">
+    <p id="typewriter21">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
-  <div class ="text22">
-    <p id="typewriter22">ejowfjidwojjjiojiodejiojiowejoidjiowe
-   </p>
+  </pre>
+  <pre>
+    <div class ="text22">
+    <p id="typewriter22">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
-  <div class ="text23">
-    <p id="typewriter23">ejowfjidwojjjiojiodejiojiowejoidjiowe
-    </p>
+  </pre>
+  <pre>
+    <div class ="text23">
+    <p id="typewriter23">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
-
-  <div class ="text24">
-    <p id="typewriter24">ejowfjidwojjjiojiodejiojiowejoidjiowe
-
-    </p>
-    </p>
+  </pre>
+  <pre>
+    <div class ="text24">
+    <p id="typewriter24">
+/* general styling */ body { display: flex; margin: 0; backg
+round-color: #000; } p { color: #0F0; font-size: 12px; font-
+family: monospace; text-align: justify; word-break: break-al
+l; /* so the text does not hyphenate */ padding: 5px; text-s
+hadow: 0 0 10px #0F0, 0 0 20px #0F0, 0 0 30px #0F0; /* glowi
+ng effect to the text */ } /* to make sure the text does not
+ show until it is typed out */ .hidden { display: none; } /*
+ shaking animation transformation */ @keyframes shake { 0% {
+ transform: translate(0, 0); } 10%, 20% { transform: transla
+te(-5px, 0); } 30%, 50%, 70%, 90% { transform: translate(5px
+, 0); } 40%, 60%, 80% { transform: translate(-5px, 0); } 100
+% { transform: translate(0, 0); } } /* shaking animation hap
+pens to all of the text every minute */ .clock.shake { anima
+tion: shake 0.5s ease-in-out; } .error-message { position: f
+ixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+ } window.addEventListener('DOMContentLoaded', function() { 
+// typewriter 1 const text1 = document.getElementById('typew
+riter').textContent; document.getElementById('typewriter').t
+extContent = ''; let index1 = 0; function typeWriter() { if 
+(index1 < text1.length) { document.getElementById('typewrite
+r').textContent += text1.charAt(index1); index1++; setTimeou
+t(typeWriter, 1); } else { typeWriter2(); // once typewriter
+ is finished typing out, the next one begins } } typeWriter(
+); // typewriter 2 // typewriter 2 // typewriter 3 // typewr
+iter 4 // typewriter 5 // typewriter 6 // typewriter 7 // ty
+pewriter 8 // typewriter 9 // typewriter 10 // typewriter 11
+ // typewriter 12 // typewriter 13 // typewriter 14 // typew
+riter 15 // typewriter 16 // typewriter 17 // typewriter 18 
+// typewriter 19 // typewriter 20 // typewriter 21 // typewr
+iter 22 // typewriter 23 // typewriter 24 const text24 = doc
+ument.getElementById('typewriter24').textContent; document.g
+etElementById('typewriter24').textContent = ''; let index24 
+= 0; function typeWriter24() { if (index24 < text24.length) 
+{ document.getElementById('typewriter24').textContent += tex
+t24.charAt(index24); index24++; setTimeout(typeWriter24, 1);
+ } else { // clear the text and display a message after a de
+lay document.body.innerHTML = ''; // clears HTML setTimeout(
+function() { let message = document.createElement('p'); mess
+age.textContent = "you have completed 24 hours. refresh to r
+estart."; message.classList.add('error-message'); // add CSS
+ document.body.appendChild(message); }, 2000); // 2000 milli
+seconds (2 seconds) delay before showing the message } } });
+ // code to play sound throughout // function to play the cl
+icking sound (every second) function playClickSound() { var 
+audio = document.getElementById("clickSound"); audio.current
+Time = 0; audio.play(); } // function to play the beeping so
+und (every minute) function playBeepSound() { var audio = do
+cument.getElementById("beepSound"); audio.currentTime = 0; a
+udio.play(); } // function to play computer whir continuousl
+y) function playComputerSound() { var audio = document.getEl
+ementById("computerSound"); audio.volume = 0.3; // make the 
+audio quieter audio.play(); audio.addEventListener('ended', 
+function() { this.currentTime = 0; this.play(); }); } // pla
+ying the sounds simultaneously playClickSound(); playCompute
+rSound(); playBeepSound(); // repeat the clicking sound ever
+y second setInterval(playClickSound, 1000); setInterval(play
+BeepSound, 60000); // every 10 seconds setInterval(function(
+) { document.querySelector('.clock').classList.add('shake');
+  // remove shake setTimeout(function() { document.querySelec
+tor('.clock').classList.remove('shake'); }, 100); }, 60000);
   </div>
+  </pre>
 </section>
 
 
