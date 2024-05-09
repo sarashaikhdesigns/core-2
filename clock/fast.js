@@ -354,52 +354,5 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// code to play sound throughout
 
 
-// function to play the clicking sound (every second)
-function playClickSound() {
-  var audio = document.getElementById("clickSound");
-  audio.currentTime = 0; 
-  audio.play();
-}
-
-// function to play the beeping sound (every minute)
-function playBeepSound() {
-  var audio = document.getElementById("beepSound");
-  audio.currentTime = 0; 
-  audio.play();
-}
-
-// function to play computer whir continuously)
-function playComputerSound() {
-  var audio = document.getElementById("computerSound");
-  audio.volume = 0.3; // make the audio quieter
-  audio.play();
-  audio.addEventListener('ended', function() {
-    this.currentTime = 0;
-    this.play();
-  });
-}
-
-// playing the sounds simultaneously
-playClickSound();
-playComputerSound();
-playBeepSound();
-
-
-// repeat the clicking sound every second
-setInterval(playClickSound, 1000);
-setInterval(playBeepSound, 60000);
-
-
-
-// every 10 seconds
-setInterval(function() {
-  document.querySelector('.clock').classList.add('shake');
-
-  // remove shake
-  setTimeout(function() {
-      document.querySelector('.clock').classList.remove('shake');
-  }, 1000); 
-}, 60000); 
