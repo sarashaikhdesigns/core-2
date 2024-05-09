@@ -374,7 +374,7 @@ function playBeepSound() {
 // function to play computer whir continuously)
 function playComputerSound() {
   var audio = document.getElementById("computerSound");
-  audio.volume = 0.3; // make the audio quieter
+  audio.volume = 0.6; // make the audio quieter
   audio.play();
   audio.addEventListener('ended', function() {
     this.currentTime = 0;
