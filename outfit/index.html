@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outfit of the Day Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Outfit of the Day</h1>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="generator">Generator</button>
+        <button class="tab-btn" data-tab="saved">Saved Outfits (<span id="saved-count">0</span>)</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="generator" class="tab-content active">
+        <div class="outfit-grid">
+          <div class="outfit-item">
+            <div class="item-header">
+              <h3>Top</h3>
+              <button class="shuffle-btn" data-category="tops">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"></path><path d="m18 2 4 4-4 4"></path><path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"></path><path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"></path><path d="m18 14 4 4-4 4"></path></svg>
+              </button>
+            </div>
+            <div class="item-image" id="top-image"></div>
+            <div class="item-name" id="top-name">Loading...</div>
+          </div>
+
+          <div class="outfit-item">
+            <div class="item-header">
+              <h3>Bottom</h3>
+              <button class="shuffle-btn" data-category="bottoms">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"></path><path d="m18 2 4 4-4 4"></path><path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"></path><path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"></path><path d="m18 14 4 4-4 4"></path></svg>
+              </button>
+            </div>
+            <div class="item-image" id="bottom-image"></div>
+            <div class="item-name" id="bottom-name">Loading...</div>
+          </div>
+
+          <div class="outfit-item">
+            <div class="item-header">
+              <h3>Shoes</h3>
+              <button class="shuffle-btn" data-category="shoes">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"></path><path d="m18 2 4 4-4 4"></path><path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"></path><path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"></path><path d="m18 14 4 4-4 4"></path></svg>
+              </button>
+            </div>
+            <div class="item-image" id="shoes-image"></div>
+            <div class="item-name" id="shoes-name">Loading...</div>
+          </div>
+
+          <div class="outfit-item">
+            <div class="item-header">
+              <h3>Accessory</h3>
+              <button class="shuffle-btn" data-category="accessories">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"></path><path d="m18 2 4 4-4 4"></path><path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"></path><path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"></path><path d="m18 14 4 4-4 4"></path></svg>
+              </button>
+            </div>
+            <div class="item-image" id="accessory-image"></div>
+            <div class="item-name" id="accessory-name">Loading...</div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button id="randomize-all" class="primary-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"></path><path d="m18 2 4 4-4 4"></path><path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"></path><path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"></path><path d="m18 14 4 4-4 4"></path></svg>
+            Randomize All
+          </button>
+          <button id="save-outfit" class="secondary-btn">Save This Outfit</button>
+        </div>
+      </section>
+
+      <section id="saved" class="tab-content">
+        <div id="saved-outfits" class="saved-outfits">
+          <p class="empty-message">No saved outfits yet. Generate and save some outfits first!</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
