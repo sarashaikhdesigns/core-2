@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outfit of the Day Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>WARDROBE</h1>
+      <div class="subtitle">FALL FASHIONS!</div>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="generator">GENERATOR</button>
+        <button class="tab-btn" data-tab="saved">SAVED OUTFITS (<span id="saved-count">0</span>)</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="generator" class="tab-content active">
+        <div class="outfit-grid">
+          <div class="outfit-item">
+            <div class="item-header">
+              <h3>TOP</h3>
+              <div class="item-controls">
+                <button class="shuffle-btn" data-category="tops">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"></path><path d="m18 2 4 4-4 4"></path><path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"></path><path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"></path><path d="m18 14 4 4-4 4"></path></svg>
+                </button>
+                <label class="upload-btn" for="upload-top">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                  <span class="tooltip">Upload your own</span>
+                </label>
+                <input type="file" id="upload-top" class="file-input" data-category="tops" accept="image/*">
+              </div>
+            </div>
+            <div class="item-image" id="top-image"></div>
+            <div class="item-name" id="top-name">Loading...</div>
+          </div>
+
+          <div class="outfit-item">
+            <div class="item-header">
+              <h3>BOTTOM</h3>
+              <div class="item-controls">
+                <button class="shuffle-btn" data-category="bottoms">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"></path><path d="m18 2 4 4-4 4"></path><path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"></path><path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"></path><path d="m18 14 4 4-4 4"></path></svg>
+                </button>
+                <label class="upload-btn" for="upload-bottom">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                  <span class="tooltip">Upload your own</span>
+                </label>
+                <input type="file" id="upload-bottom" class="file-input" data-category="bottoms" accept="image/*">
+              </div>
+            </div>
+            <div class="item-image" id="bottom-image"></div>
+            <div class="item-name" id="bottom-name">Loading...</div>
+          </div>
+
+          <div class="outfit-item">
+            <div class="item-header">
+              <h3>SHOES</h3>
+              <div class="item-controls">
+                <button class="shuffle-btn" data-category="shoes">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"></path><path d="m18 2 4 4-4 4"></path><path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"></path><path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"></path><path d="m18 14 4 4-4 4"></path></svg>
+                </button>
+                <label class="upload-btn" for="upload-shoes">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                  <span class="tooltip">Upload your own</span>
+                </label>
+                <input type="file" id="upload-shoes" class="file-input" data-category="shoes" accept="image/*">
+              </div>
+            </div>
+            <div class="item-image" id="shoes-image"></div>
+            <div class="item-name" id="shoes-name">Loading...</div>
+          </div>
+
+          <div class="outfit-item">
+            <div class="item-header">
+              <h3>ACCESSORY</h3>
+              <div class="item-controls">
+                <button class="shuffle-btn" data-category="accessories">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"></path><path d="m18 2 4 4-4 4"></path><path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"></path><path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"></path><path d="m18 14 4 4-4 4"></path></svg>
+                </button>
+                <label class="upload-btn" for="upload-accessory">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                  <span class="tooltip">Upload your own</span>
+                </label>
+                <input type="file" id="upload-accessory" class="file-input" data-category="accessories" accept="image/*">
+              </div>
+            </div>
+            <div class="item-image" id="accessory-image"></div>
+            <div class="item-name" id="accessory-name">Loading...</div>
+          </div>
+        </div>
+
+        <div class="action-buttons">
+          <button id="randomize-all" class="primary-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"></path><path d="m18 2 4 4-4 4"></path><path d="M2 6h1.9c1.5 0 2.9.9 3.6 2.2"></path><path d="M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8"></path><path d="m18 14 4 4-4 4"></path></svg>
+            DRESS ME
+          </button>
+          <button id="save-outfit" class="secondary-btn">SAVE THIS OUTFIT</button>
+        </div>
+      </section>
+
+      <section id="saved" class="tab-content">
+        <div id="saved-outfits" class="saved-outfits">
+          <p class="empty-message">No saved outfits yet. Generate and save some outfits first!</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
