@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - StyleShare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="closet-header">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <a href="closet.html?user=me" class="back-button">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1 class="closet-title">Settings</h1>
+      </div>
+    </div>
+
+    <div class="y2k-container">
+      <h2 class="section-title">ACCOUNT SETTINGS</h2>
+      
+      <div class="form-group">
+        <label for="display-name" class="form-label">DISPLAY NAME</label>
+        <input type="text" id="display-name" class="form-input" value="My Name">
+      </div>
+      
+      <div class="form-group">
+        <label for="username" class="form-label">USERNAME</label>
+        <input type="text" id="username" class="form-input" value="me" disabled>
+        <p style="font-size: 0.75rem; margin-top: 0.25rem; color: var(--y2k-blue);">Username cannot be changed</p>
+      </div>
+      
+      <div class="form-group">
+        <label for="bio" class="form-label">BIO</label>
+        <textarea id="bio" class="form-input" rows="3">Fashion enthusiast | Y2K style | Sharing my daily outfits</textarea>
+      </div>
+      
+      <button id="save-profile" class="y2k-button y2k-button-primary" style="margin-bottom: 2rem;">
+        SAVE PROFILE
+      </button>
+      
+      <h2 class="section-title">APP SETTINGS</h2>
+      
+      <div class="form-group">
+        <label class="form-label">THEME</label>
+        <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+          <button class="theme-button active" data-theme="default" style="background-color: var(--y2k-purple); color: white; padding: 0.5rem 1rem; border-radius: 4px; border: 2px solid var(--y2k-border);">
+            Default
+          </button>
+          <button class="theme-button" data-theme="dark" style="background-color: #111; color: white; padding: 0.5rem 1rem; border-radius: 4px; border: 2px solid var(--y2k-border);">
+            Dark
+          </button>
+          <button class="theme-button" data-theme="pastel" style="background-color: #ffccf9; color: #333; padding: 0.5rem 1rem; border-radius: 4px; border: 2px solid var(--y2k-border);">
+            Pastel
+          </button>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label class="form-label">DATA MANAGEMENT</label>
+        <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+          <button id="clear-outfits" class="y2k-button y2k-button-secondary" style="background-color: #ff4444;">
+            CLEAR SAVED OUTFITS
+          </button>
+          <button id="clear-all-data" class="y2k-button y2k-button-secondary" style="background-color: #ff4444;">
+            CLEAR ALL DATA
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Load user preferences
+    loadUserPreferences();
+    
+    // Set active theme button
+    document.querySelectorAll('.theme-button').forEach(button => {
+      if (button.getAttribute('data-theme') === userPreferences.theme) {
+        button.classList.add('active');
+      } else {
+        button.classList.remove('active');
+      }
+    });
+    
+    // Theme switching
+    document.querySelectorAll('.theme-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const theme = button.getAttribute('data-theme');
+        
+        // Update active button
+        document.querySelectorAll('.theme-button').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        button.classList.add('active');
+        
+        // Save theme preference
+        userPreferences.theme = theme;
+        saveUserPreferences();
+        
+        // Apply theme
+        document.body.className = theme !== 'default' ? `theme-${theme}` : '';
+        
+        // Show confirmation
+        alert(`Theme changed to ${theme}!`);
+      });
+    });
+    
+    // Save profile
+    document.getElementById('save-profile').addEventListener('click', () => {
+      const displayName = document.getElementById('display-name').value;
+      const bio = document.getElementById('bio').value;
+      
+      // Save to localStorage
+      userPreferences.displayName = displayName;
+      userPreferences.bio = bio;
+      saveUserPreferences();
+      
+      alert('Profile saved successfully!');
+    });
+    
+    // Clear saved outfits
+    document.getElementById('clear-outfits').addEventListener('click', () => {
+      if (confirm('Are you sure you want to clear all saved outfits? This cannot be undone.')) {
+        savedOutfits = [];
+        saveSavedOutfits();
+        alert('All saved outfits have been cleared.');
+      }
+    });
+    
+    // Clear all data
+    document.getElementById('clear-all-data').addEventListener('click', () => {
+      if (confirm('Are you sure you want to clear ALL app data? This includes saved outfits, preferences, and custom items. This cannot be undone.')) {
+        localStorage.clear();
+        alert('All data has been cleared. The page will now reload.');
+        window.location.reload();
+      }
+    });
+    
+    // Populate form with saved data
+    if (userPreferences.displayName) {
+      document.getElementById('display-name').value = userPreferences.displayName;
+    }
+    
+    if (userPreferences.bio) {
+      document.getElementById('bio').value = userPreferences.bio;
+    }
+  </script>
+</body>
+</html>

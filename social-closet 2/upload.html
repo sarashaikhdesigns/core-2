@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Item - StyleShare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="closet-header">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <a href="closet.html?user=me" class="back-button">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1 class="closet-title">Upload New Item</h1>
+      </div>
+      <button id="save-item" class="y2k-button y2k-button-primary" style="padding: 0.5rem 1rem; font-size: 0.7rem;">
+        SAVE
+      </button>
+    </div>
+
+    <div class="y2k-container">
+      <div class="form-group">
+        <label for="item-name" class="form-label">ITEM NAME</label>
+        <input type="text" id="item-name" class="form-input" placeholder="e.g., Blue Denim Jacket">
+      </div>
+
+      <div class="form-group">
+        <label for="item-category" class="form-label">CATEGORY</label>
+        <select id="item-category" class="form-input">
+          <option value="tops">Tops</option>
+          <option value="bottoms">Bottoms</option>
+          <option value="shoes">Shoes</option>
+          <option value="accessories">Accessories</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">ITEM COLOR</label>
+        <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+          <input type="color" id="item-color" value="#3b82f6" style="width: 50px; height: 50px; border: none; cursor: pointer;">
+          <div id="color-preview" style="width: 100px; height: 50px; background-color: #3b82f6; border: 2px solid var(--y2k-border); border-radius: 4px;"></div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">TEXT COLOR</label>
+        <div style="display: flex; gap: 1rem; margin-top: 0.5rem;">
+          <button class="text-color-btn active" data-color="#ffffff" style="background-color: #ffffff; color: #000000; padding: 0.5rem 1rem; border-radius: 4px; border: 2px solid var(--y2k-border);">
+            White
+          </button>
+          <button class="text-color-btn" data-color="#000000" style="background-color: #000000; color: #ffffff; padding: 0.5rem 1rem; border-radius: 4px; border: 2px solid var(--y2k-border);">
+            Black
+          </button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">PREVIEW</label>
+        <div class="y2k-card" style="max-width: 200px; margin-top: 0.5rem;">
+          <div class="y2k-card-header">
+            <h3 class="y2k-card-title" id="preview-category">TOPS</h3>
+          </div>
+          <div class="y2k-item-image" id="preview-item" style="background-color: #3b82f6; color: #ffffff;">
+            New Item
+          </div>
+          <div class="y2k-item-name" id="preview-name">New Item</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Load data
+    loadCustomItems();
+    
+    // Current item data
+    let currentItem = {
+      name: 'New Item',
+      color: '#3b82f6',
+      textColor: '#ffffff',
+      category: 'tops'
+    };
+    
+    // Update preview
+    function updatePreview() {
+      document.getElementById('preview-item').style.backgroundColor = currentItem.color;
+      document.getElementById('preview-item').style.color = currentItem.textColor;
+      document.getElementById('preview-item').textContent = currentItem.name || 'New Item';
+      document.getElementById('preview-name').textContent = currentItem.name || 'New Item';
+      document.getElementById('preview-category').textContent = currentItem.category.toUpperCase();
+    }
+    
+    // Item name input
+    document.getElementById('item-name').addEventListener('input', (e) => {
+      currentItem.name = e.target.value;
+      updatePreview();
+    });
+    
+    // Category select
+    document.getElementById('item-category').addEventListener('change', (e) => {
+      currentItem.category = e.target.value;
+      updatePreview();
+    });
+    
+    // Color picker
+    document.getElementById('item-color').addEventListener('input', (e) => {
+      currentItem.color = e.target.value;
+      document.getElementById('color-preview').style.backgroundColor = e.target.value;
+      updatePreview();
+    });
+    
+    // Text color buttons
+    document.querySelectorAll('.text-color-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.text-color-btn').forEach(btn => {
+          btn.classList.remove('active');
+        });
+        button.classList.add('active');
+        
+        currentItem.textColor = button.getAttribute('data-color');
+        updatePreview();
+      });
+    });
+    
+    // Save item
+    document.getElementById('save-item').addEventListener('click', () => {
+      // Validate
+      if (!currentItem.name) {
+        alert('Please enter an item name');
+        return;
+      }
+      
+      // Add ID
+      currentItem.id = Date.now();
+      
+      // Add to custom items
+      addCustomItem(currentItem.category, {
+        id: currentItem.id,
+        name: currentItem.name,
+        color: currentItem.color,
+        textColor: currentItem.textColor
+      });
+      
+      // Show success message
+      alert('Item saved successfully!');
+      
+      // Redirect back to closet
+      window.location.href = 'closet.html?user=me';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed - StyleShare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="feed-header">
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">STYLESHARE</a>
+        
+        <div class="search-bar">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" class="search-input" placeholder="Search closets and users...">
+        </div>
+        
+        <div class="user-menu">
+          <a href="create.html" class="icon-button create-button">
+            <i class="fas fa-plus"></i>
+          </a>
+          <a href="#" class="icon-button notifications-button">
+            <i class="fas fa-bell"></i>
+          </a>
+          <a href="closet.html?user=me">
+            <img src="https://placehold.co/40x40/ff66c4/ffffff?text=Me" alt="Profile" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--y2k-border);">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="feed-tabs">
+      <div class="feed-tab-container">
+        <button class="y2k-tab y2k-tab-active" data-tab="following">FOLLOWING</button>
+        <button class="y2k-tab" data-tab="discover">DISCOVER</button>
+      </div>
+    </div>
+
+    <div class="feed-posts">
+      <div class="post y2k-card">
+        <div class="post-header">
+          <img src="https://placehold.co/40x40/cc66ff/ffffff?text=U1" alt="User 1" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--y2k-border);">
+          <div class="post-user-info">
+            <a href="closet.html?user=user1" class="post-username">Friend 1</a>
+            <div class="post-meta">Posted a new outfit</div>
+          </div>
+        </div>
+        <div class="post-image">
+          <img src="https://placehold.co/600x600/000033/ffffff?text=Outfit+1" alt="Outfit 1">
+        </div>
+        <div class="post-actions">
+          <button class="post-action like-action">
+            <i class="fas fa-heart"></i>
+            <span>53</span>
+          </button>
+          <button class="post-action comment-action">
+            <i class="fas fa-comment"></i>
+            <span>8</span>
+          </button>
+          <button class="post-action share-action">
+            <i class="fas fa-share"></i>
+          </button>
+        </div>
+        <div class="post-content">
+          <p class="post-text">
+            <span style="font-weight: 500; color: var(--y2k-yellow);">Friend 1</span>
+            Spring outfit for casual days. Mixing my favorite jeans with that new top I got last week.
+          </p>
+          <a href="closet.html?user=user1" class="post-link">View full closet</a>
+        </div>
+      </div>
+
+      <div class="post y2k-card">
+        <div class="post-header">
+          <img src="https://placehold.co/40x40/cc66ff/ffffff?text=U2" alt="User 2" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--y2k-border);">
+          <div class="post-user-info">
+            <a href="closet.html?user=user2" class="post-username">Friend 2</a>
+            <div class="post-meta">Posted a new outfit</div>
+          </div>
+        </div>
+        <div class="post-image">
+          <img src="https://placehold.co/600x600/000033/ffffff?text=Outfit+2" alt="Outfit 2">
+        </div>
+        <div class="post-actions">
+          <button class="post-action like-action">
+            <i class="fas fa-heart"></i>
+            <span>64</span>
+          </button>
+          <button class="post-action comment-action">
+            <i class="fas fa-comment"></i>
+            <span>9</span>
+          </button>
+          <button class="post-action share-action">
+            <i class="fas fa-share"></i>
+          </button>
+        </div>
+        <div class="post-content">
+          <p class="post-text">
+            <span style="font-weight: 500; color: var(--y2k-yellow);">Friend 2</span>
+            Y2K vibes today! Found this amazing vintage top at the thrift store yesterday.
+          </p>
+          <a href="closet.html?user=user2" class="post-link">View full closet</a>
+        </div>
+      </div>
+
+      <div class="post y2k-card">
+        <div class="post-header">
+          <img src="https://placehold.co/40x40/cc66ff/ffffff?text=U3" alt="User 3" style="width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--y2k-border);">
+          <div class="post-user-info">
+            <a href="closet.html?user=user3" class="post-username">Friend 3</a>
+            <div class="post-meta">Posted a new outfit</div>
+          </div>
+        </div>
+        <div class="post-image">
+          <img src="https://placehold.co/600x600/000033/ffffff?text=Outfit+3" alt="Outfit 3">
+        </div>
+        <div class="post-actions">
+          <button class="post-action like-action">
+            <i class="fas fa-heart"></i>
+            <span>75</span>
+          </button>
+          <button class="post-action comment-action">
+            <i class="fas fa-comment"></i>
+            <span>10</span>
+          </button>
+          <button class="post-action share-action">
+            <i class="fas fa-share"></i>
+          </button>
+        </div>
+        <div class="post-content">
+          <p class="post-text">
+            <span style="font-weight: 500; color: var(--y2k-yellow);">Friend 3</span>
+            Going out tonight in this fit! What do you think?
+          </p>
+          <a href="closet.html?user=user3" class="post-link">View full closet</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="mobile-nav">
+    <div class="nav-items">
+      <a href="feed.html" class="nav-item nav-home">
+        <i class="fas fa-home nav-icon"></i>
+        <span>Home</span>
+      </a>
+      <a href="#" class="nav-item nav-search">
+        <i class="fas fa-search nav-icon"></i>
+        <span>Search</span>
+      </a>
+      <a href="create.html" class="nav-item nav-create">
+        <i class="fas fa-plus nav-icon"></i>
+        <span>Create</span>
+      </a>
+      <a href="closet.html?user=me" class="nav-item nav-profile">
+        <i class="fas fa-user nav-icon"></i>
+        <span>Profile</span>
+      </a>
+    </div>
+  </nav>
+
+  <script>
+    // Tab switching
+    const tabs = document.querySelectorAll('.y2k-tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('y2k-tab-active'));
+        tab.classList.add('y2k-tab-active');
+      });
+    });
+
+    // Like functionality
+    const likeButtons = document.querySelectorAll('.like-action');
+    likeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const countElement = button.querySelector('span');
+        let count = parseInt(countElement.textContent);
+        
+        if (button.classList.contains('liked')) {
+          button.classList.remove('liked');
+          countElement.textContent = count - 1;
+        } else {
+          button.classList.add('liked');
+          countElement.textContent = count + 1;
+        }
+      });
+    });
+  </script>
+
+  <script>
+    // Load user preferences
+    loadUserPreferences();
+    
+    // Add data-post-id attributes to posts
+    document.querySelectorAll('.post').forEach((post, index) => {
+      post.setAttribute('data-post-id', `post-${index + 1}`);
+    });
+    
+    // Tab switching with localStorage
+    const tabs = document.querySelectorAll('.y2k-tab');
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const tabId = tab.getAttribute('data-tab');
+        
+        // Update active tab
+        tabs.forEach(t => t.classList.remove('y2k-tab-active'));
+        tab.classList.add('y2k-tab-active');
+        
+        // Save the active tab in preferences
+        userPreferences.feedTab = tabId;
+        saveUserPreferences();
+      });
+    });
+
+    // Restore the active tab from preferences
+    if (userPreferences.feedTab) {
+      const savedTab = document.querySelector(`.y2k-tab[data-tab="${userPreferences.feedTab}"]`);
+      if (savedTab) {
+        savedTab.click();
+      }
+    }
+
+    // Like functionality with localStorage
+    const likeButtons = document.querySelectorAll('.like-action');
+    likeButtons.forEach(button => {
+      const post = button.closest('.post');
+      const postId = post.getAttribute('data-post-id');
+      
+      // Check if post is already liked
+      if (isPostLiked(postId)) {
+        button.classList.add('liked');
+      }
+      
+      button.addEventListener('click', () => {
+        const countElement = button.querySelector('span');
+        let count = parseInt(countElement.textContent);
+        
+        if (button.classList.contains('liked')) {
+          button.classList.remove('liked');
+          countElement.textContent = count - 1;
+          toggleLikePost(postId); // Remove from liked posts
+        } else {
+          button.classList.add('liked');
+          countElement.textContent = count + 1;
+          toggleLikePost(postId); // Add to liked posts
+        }
+      });
+    });
+</script>
+</body>
+</html>

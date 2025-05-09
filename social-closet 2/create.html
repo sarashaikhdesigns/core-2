@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create - StyleShare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="closet-header">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <a href="feed.html" class="back-button">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1 class="closet-title">Create New Post</h1>
+      </div>
+      <button id="post-button" class="y2k-button y2k-button-primary" style="padding: 0.5rem 1rem; font-size: 0.7rem;">
+        POST
+      </button>
+    </div>
+
+    <div class="y2k-container">
+      <div class="form-group">
+        <label for="post-type" class="form-label">WHAT ARE YOU CREATING?</label>
+        <select id="post-type" class="form-input">
+          <option value="outfit">Outfit</option>
+          <option value="item">Clothing Item</option>
+          <option value="collection">Collection</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">UPLOAD IMAGES</label>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 0.5rem;">
+          <div class="y2k-card" style="aspect-ratio: 3/4; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+            <div style="text-align: center; color: var(--y2k-purple);">
+              <i class="fas fa-plus" style="font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+              <div>Add Image</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="title" class="form-label">TITLE</label>
+        <input type="text" id="title" class="form-input" placeholder="Summer casual outfit">
+      </div>
+
+      <div class="form-group">
+        <label for="description" class="form-label">DESCRIPTION</label>
+        <textarea id="description" class="form-input" rows="4" placeholder="Tell others about this item..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="category" class="form-label">CATEGORY</label>
+        <select id="category" class="form-input">
+          <option value="">Select category</option>
+          <option value="casual">Casual</option>
+          <option value="formal">Formal</option>
+          <option value="workout">Workout</option>
+          <option value="special">Special Occasion</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('post-button').addEventListener('click', function() {
+      // Simulate posting
+      alert('Post created successfully!');
+      window.location.href = 'feed.html';
+    });
+  </script>
+</body>
+</html>

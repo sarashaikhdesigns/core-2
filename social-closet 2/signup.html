@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - StyleShare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <div class="y2k-container">
+        <h1 class="form-title">CREATE ACCOUNT</h1>
+        <p class="form-subtitle">Join StyleShare and start sharing your closet</p>
+        
+        <form id="signup-form">
+          <div class="form-group">
+            <label for="name" class="form-label">FULL NAME</label>
+            <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="username" class="form-label">USERNAME</label>
+            <input type="text" id="username" class="form-input" placeholder="johndoe" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">EMAIL</label>
+            <input type="email" id="email" class="form-input" placeholder="you@example.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="password" class="form-label">PASSWORD</label>
+            <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+          </div>
+          
+          <button type="submit" class="y2k-button y2k-button-primary" style="width: 100%;">CREATE ACCOUNT</button>
+        </form>
+        
+        <div class="form-footer">
+          <p>Already have an account? <a href="login.html" class="form-link">Sign in</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('signup-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Simulate signup
+      setTimeout(() => {
+        window.location.href = 'feed.html';
+      }, 1000);
+    });
+  </script>
+</body>
+</html>

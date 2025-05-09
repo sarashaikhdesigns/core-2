@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - StyleShare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <div class="y2k-container">
+        <h1 class="form-title">WELCOME BACK</h1>
+        <p class="form-subtitle">Sign in to your StyleShare account</p>
+        
+        <form id="login-form">
+          <div class="form-group">
+            <label for="email" class="form-label">EMAIL</label>
+            <input type="email" id="email" class="form-input" placeholder="you@example.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="password" class="form-label">PASSWORD</label>
+            <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+            <div style="text-align: right; margin-top: 0.5rem;">
+              <a href="#" class="form-link">Forgot password?</a>
+            </div>
+          </div>
+          
+          <button type="submit" class="y2k-button y2k-button-primary" style="width: 100%;">SIGN IN</button>
+        </form>
+        
+        <div class="form-footer">
+          <p>Don't have an account? <a href="signup.html" class="form-link">Sign up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('login-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Simulate login
+      setTimeout(() => {
+        window.location.href = 'feed.html';
+      }, 1000);
+    });
+  </script>
+</body>
+</html>

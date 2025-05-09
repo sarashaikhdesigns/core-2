@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Closet - StyleShare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="closet-header">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <a href="feed.html" class="back-button">
+          <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1 class="closet-title" id="closet-title">User's Closet</h1>
+      </div>
+      <div style="display: flex; gap: 0.5rem;">
+        <button class="back-button" style="background-color: var(--y2k-blue);">
+          <i class="fas fa-share"></i>
+        </button>
+        <button class="back-button" style="background-color: var(--y2k-green); display: none;" id="settings-button">
+          <i class="fas fa-cog"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="y2k-container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+        <div class="profile-container">
+          <div class="profile-avatar">
+            <img src="https://placehold.co/100x100/cc66ff/ffffff?text=U" id="profile-image" alt="User">
+          </div>
+          <div class="profile-info">
+            <h2 class="profile-name" id="profile-name">User</h2>
+            <p class="profile-username" id="profile-username">@username</p>
+            <p class="profile-bio">Fashion enthusiast | Y2K style | Sharing my daily outfits</p>
+            <div class="profile-stats">
+              <p class="stat-followers"><span class="stat-count">1,243</span> followers</p>
+              <p class="stat-following"><span class="stat-count">567</span> following</p>
+            </div>
+          </div>
+        </div>
+        <button class="y2k-button y2k-button-secondary" id="follow-button" style="display: none;">FOLLOW</button>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button class="y2k-tab y2k-tab-active" data-tab="items">ITEMS</button>
+      <button class="y2k-tab" data-tab="outfits">OUTFITS</button>
+      <button class="y2k-tab" data-tab="generator">GENERATOR</button>
+    </div>
+
+    <div class="tab-content" id="items-tab">
+      <div class="y2k-container">
+        <div class="items-grid" id="items-grid">
+          <!-- Items will be populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="outfits-tab" style="display: none;">
+      <div class="y2k-container">
+        <div id="saved-outfits">
+          <p style="text-align: center; color: var(--y2k-yellow);">No saved outfits yet. Create some in the generator!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="generator-tab" style="display: none;">
+      <div class="y2k-container">
+        <div class="generator-grid">
+          <div class="y2k-card">
+            <div class="y2k-card-header">
+              <h3 class="y2k-card-title">TOP</h3>
+              <button class="shuffle-button" data-category="top">
+                <i class="fas fa-random"></i>
+              </button>
+            </div>
+            <div class="y2k-item-image" id="top-item" style="background-color: #ffffff; color: #000000;">
+              White T-Shirt
+            </div>
+            <div class="y2k-item-name" id="top-name">White T-Shirt</div>
+          </div>
+
+          <div class="y2k-card">
+            <div class="y2k-card-header">
+              <h3 class="y2k-card-title">BOTTOM</h3>
+              <button class="shuffle-button" data-category="bottom">
+                <i class="fas fa-random"></i>
+              </button>
+            </div>
+            <div class="y2k-item-image" id="bottom-item" style="background-color: #1d4ed8; color: #ffffff;">
+              Blue Jeans
+            </div>
+            <div class="y2k-item-name" id="bottom-name">Blue Jeans</div>
+          </div>
+
+          <div class="y2k-card">
+            <div class="y2k-card-header">
+              <h3 class="y2k-card-title">SHOES</h3>
+              <button class="shuffle-button" data-category="shoes">
+                <i class="fas fa-random"></i>
+              </button>
+            </div>
+            <div class="y2k-item-image" id="shoes-item" style="background-color: #f9fafb; color: #000000;">
+              White Sneakers
+            </div>
+            <div class="y2k-item-name" id="shoes-name">White Sneakers</div>
+          </div>
+
+          <div class="y2k-card">
+            <div class="y2k-card-header">
+              <h3 class="y2k-card-title">ACCESSORY</h3>
+              <button class="shuffle-button" data-category="accessory">
+                <i class="fas fa-random"></i>
+              </button>
+            </div>
+            <div class="y2k-item-image" id="accessory-item" style="background-color: #d1d5db; color: #000000;">
+              Silver Watch
+            </div>
+            <div class="y2k-item-name" id="accessory-name">Silver Watch</div>
+          </div>
+        </div>
+
+        <div class="generator-actions">
+          <button class="y2k-button y2k-button-primary" id="randomize-all">
+            <i class="fas fa-random" style="margin-right: 0.5rem;"></i>
+            DRESS ME
+          </button>
+          <button class="y2k-button y2k-button-secondary" id="save-outfit">
+            SAVE THIS OUTFIT
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Get username from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const username = urlParams.get('user') || 'user1';
+    
+    // Update page based on username
+    document.getElementById('closet-title').textContent = username === 'me' ? 'My Closet' : `${username}'s Closet`;
+    document.getElementById('profile-name').textContent = username === 'me' ? 'My Name' : username.charAt(0).toUpperCase() + username.slice(1);
+    document.getElementById('profile-username').textContent = `@${username}`;
+    document.getElementById('profile-image').src = `https://placehold.co/100x100/cc66ff/ffffff?text=${username === 'me' ? 'Me' : username.charAt(0).toUpperCase()}`;
+    
+    // Show/hide buttons based on if it's the user's own closet
+    if (username === 'me') {
+      document.getElementById('settings-button').style.display = 'flex';
+      document.getElementById('follow-button').style.display = 'none';
+    } else {
+      document.getElementById('settings-button').style.display = 'none';
+      document.getElementById('follow-button').style.display = 'block';
+    }
+
+    // Populate items grid
+    const itemsGrid = document.getElementById('items-grid');
+    
+    // Load data from script.js
+    loadSavedOutfits();
+    loadCustomItems();
+    loadCurrentOutfit();
+    loadUserPreferences();
+    
+    // Update the outfit display with the current outfit from localStorage
+    function updateOutfitDisplay() {
+      document.getElementById('top-item').style.backgroundColor = currentOutfit.top.color;
+      document.getElementById('top-item').style.color = currentOutfit.top.textColor;
+      document.getElementById('top-item').textContent = currentOutfit.top.name;
+      document.getElementById('top-name').textContent = currentOutfit.top.name;
+      
+      document.getElementById('bottom-item').style.backgroundColor = currentOutfit.bottom.color;
+      document.getElementById('bottom-item').style.color = currentOutfit.bottom.textColor;
+      document.getElementById('bottom-item').textContent = currentOutfit.bottom.name;
+      document.getElementById('bottom-name').textContent = currentOutfit.bottom.name;
+      
+      document.getElementById('shoes-item').style.backgroundColor = currentOutfit.shoes.color;
+      document.getElementById('shoes-item').style.color = currentOutfit.shoes.textColor;
+      document.getElementById('shoes-item').textContent = currentOutfit.shoes.name;
+      document.getElementById('shoes-name').textContent = currentOutfit.shoes.name;
+      
+      document.getElementById('accessory-item').style.backgroundColor = currentOutfit.accessory.color;
+      document.getElementById('accessory-item').style.color = currentOutfit.accessory.textColor;
+      document.getElementById('accessory-item').textContent = currentOutfit.accessory.name;
+      document.getElementById('accessory-name').textContent = currentOutfit.accessory.name;
+    }
+
+    // Populate the items grid with both default and custom items
+    function populateItemsGrid() {
+      itemsGrid.innerHTML = '';
+      
+      // Combine default and custom items
+      const categories = ['tops', 'bottoms', 'shoes', 'accessories'];
+      
+      categories.forEach(category => {
+        const allItems = [...clothingItems[category], ...customItems[category]];
+        
+        allItems.forEach((item, index) => {
+          const itemElement = document.createElement('div');
+          itemElement.className = 'y2k-card';
+          itemElement.innerHTML = `
+            <div class="y2k-card-header">
+              <h3 class="y2k-card-title">${category.toUpperCase()}</h3>
+            </div>
+            <div class="y2k-item-image" style="background-color: ${item.color}; color: ${item.textColor};">
+              ${item.name}
+            </div>
+            <div class="y2k-item-name">${item.name}</div>
+          `;
+          itemsGrid.appendChild(itemElement);
+        });
+      });
+    }
+
+    // Update saved outfits display
+    function updateSavedOutfits() {
+      const savedOutfitsContainer = document.getElementById('saved-outfits');
+      
+      if (savedOutfits.length === 0) {
+        savedOutfitsContainer.innerHTML = '<p style="text-align: center; color: var(--y2k-yellow);">No saved outfits yet. Create some in the generator!</p>';
+        return;
+      }
+      
+      savedOutfitsContainer.innerHTML = '';
+      
+      const outfitsGrid = document.createElement('div');
+      outfitsGrid.className = 'items-grid';
+      
+      savedOutfits.forEach((outfit, index) => {
+        const outfitElement = document.createElement('div');
+        outfitElement.className = 'y2k-card';
+        outfitElement.innerHTML = `
+          <div class="y2k-card-header">
+            <h3 class="y2k-card-title">OUTFIT #${index + 1}</h3>
+            <button class="shuffle-button delete-outfit-btn" data-outfit-id="${outfit.id || index}" style="background-color: var(--y2k-pink);">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; padding: 0.5rem;">
+            <div style="aspect-ratio: 1; background-color: ${outfit.top.color}; color: ${outfit.top.textColor}; display: flex; align-items: center; justify-content: center; border-radius: 4px; border: 2px solid var(--y2k-border);">
+              ${outfit.top.name}
+            </div>
+            <div style="aspect-ratio: 1; background-color: ${outfit.bottom.color}; color: ${outfit.bottom.textColor}; display: flex; align-items: center; justify-content: center; border-radius: 4px; border: 2px solid var(--y2k-border);">
+              ${outfit.bottom.name}
+            </div>
+            <div style="aspect-ratio: 1; background-color: ${outfit.shoes.color}; color: ${outfit.shoes.textColor}; display: flex; align-items: center; justify-content: center; border-radius: 4px; border: 2px solid var(--y2k-border);">
+              ${outfit.shoes.name}
+            </div>
+            <div style="aspect-ratio: 1; background-color: ${outfit.accessory.color}; color: ${outfit.accessory.textColor}; display: flex; align-items: center; justify-content: center; border-radius: 4px; border: 2px solid var(--y2k-border);">
+              ${outfit.accessory.name}
+            </div>
+          </div>
+          <div class="y2k-item-name">
+            ${outfit.createdAt ? `Created on ${new Date(outfit.createdAt).toLocaleDateString()}` : 'Saved outfit'}
+          </div>
+        `;
+        outfitsGrid.appendChild(outfitElement);
+      });
+      
+      savedOutfitsContainer.appendChild(outfitsGrid);
+      
+      // Add event listeners to delete buttons
+      document.querySelectorAll('.delete-outfit-btn').forEach(button => {
+        button.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const outfitId = parseInt(button.getAttribute('data-outfit-id'));
+          if (confirm('Are you sure you want to delete this outfit?')) {
+            deleteOutfit(outfitId);
+            updateSavedOutfits();
+          }
+        });
+      });
+    }
+
+    // Initialize the page
+    populateItemsGrid();
+    updateOutfitDisplay();
+    updateSavedOutfits();
+
+    // Tab switching with localStorage
+    const tabs = document.querySelectorAll('.y2k-tab');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const tabId = tab.getAttribute('data-tab');
+        
+        // Update active tab
+        tabs.forEach(t => t.classList.remove('y2k-tab-active'));
+        tab.classList.add('y2k-tab-active');
+        
+        // Show/hide tab content
+        tabContents.forEach(content => {
+          if (content.id === tabId + '-tab') {
+            content.style.display = 'block';
+          } else {
+            content.style.display = 'none';
+          }
+        });
+        
+        // Save the active tab in preferences
+        setActiveTab(tabId);
+      });
+    });
+
+    function randomizeItem(category) {
+      const items = clothingItems[category + 's'];
+      const randomIndex = Math.floor(Math.random() * items.length);
+      currentOutfit[category] = items[randomIndex];
+      updateOutfitDisplay();
+      saveCurrentOutfit();
+    }
+
+    function randomizeAll() {
+      randomizeItem('top');
+      randomizeItem('bottom');
+      randomizeItem('shoes');
+      randomizeItem('accessory');
+    }
+
+    // Event listeners for shuffle buttons
+    document.querySelectorAll('.shuffle-button').forEach(button => {
+      button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        if (category) {
+          randomizeItem(category);
+        }
+      });
+    });
+
+    // Randomize all button
+    document.getElementById('randomize-all').addEventListener('click', randomizeAll);
+
+    // Save outfit button
+    document.getElementById('save-outfit').addEventListener('click', () => {
+      const newOutfit = saveOutfit({...currentOutfit});
+      updateSavedOutfits();
+      
+      // Show a success message
+      alert('Outfit saved successfully!');
+      
+      // Switch to outfits tab
+      document.querySelector('[data-tab="outfits"]').click();
+    });
+
+    // Follow button
+    const followButton = document.getElementById('follow-button');
+    followButton.addEventListener('click', () => {
+      if (followButton.textContent === 'FOLLOW') {
+        followButton.textContent = 'FOLLOWING';
+      } else {
+        followButton.textContent = 'FOLLOW';
+      }
+    });
+  </script>
+</body>
+</html>
